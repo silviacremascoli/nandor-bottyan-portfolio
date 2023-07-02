@@ -1,17 +1,22 @@
 <template>
-  <AppHeader />
-  <AppMain />
-  <AppFooter />
+  <div id="app">
+    <ParticlesBg />
+    <AppHeader />
+    <AppMain />
+    <AppFooter />
+  </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import ParticlesBg from "./components/ParticlesBg.vue";
 import AppMain from "./components/AppMain.vue";
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
 
 @Options({
   components: {
+    ParticlesBg,
     AppHeader,
     AppMain,
     AppFooter,
