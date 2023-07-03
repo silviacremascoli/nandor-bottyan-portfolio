@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="particles-js">
     <Particles
       id="tsparticles"
       :particlesInit="particlesInit"
@@ -7,10 +7,10 @@
       :options="{
         background: {
           color: {
-            value: '#0d47a1',
+            value: '#24263b',
           },
         },
-        fpsLimit: 120,
+        fpsLimit: 180,
         interactivity: {
           events: {
             onClick: {
@@ -35,16 +35,16 @@
             },
             grab: {
               distance: 200,
-              duration: 0.4,
+              duration: 0.5,
             },
           },
         },
         particles: {
           color: {
-            value: '#ffffff',
+            value: '#FF4A57',
           },
           links: {
-            color: '#ffffff',
+            color: '#FF4A57',
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -57,9 +57,9 @@
             direction: 'none',
             enable: true,
             outMode: 'bounce',
-            random: false,
+            random: true,
             speed: 'none',
-            straight: false,
+            straight: true,
           },
           number: {
             density: {
@@ -76,7 +76,7 @@
           },
           size: {
             random: true,
-            value: 5,
+            value: 6,
           },
         },
         detectRetina: true,
@@ -95,4 +95,23 @@ const particlesLoaded = async (container) => {
   console.log("Particles container loaded", container);
 };
 </script>
-<style></style>
+<style>
+#particles-js canvas {
+  display: block;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+  transition: opacity 0.8s ease, transform 1.4s ease;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+</style>
