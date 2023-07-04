@@ -10,13 +10,15 @@
   </footer>
 </template>
 <style>
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 footer {
   color: white;
-  margin-top: auto;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
 }
 </style>

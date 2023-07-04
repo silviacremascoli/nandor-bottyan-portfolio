@@ -35,4 +35,8 @@ nav {
 .navbar a {
   color: white;
 }
+
+.navbar-toggler {
+  background: white;
+}
 </style>
