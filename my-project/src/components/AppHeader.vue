@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Nandor Bottyan</a>
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-cloud"></i></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -32,11 +32,18 @@ nav {
 .navbar {
   padding: 10px 50px;
 }
-.navbar a {
+.nav-link {
   color: white;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .navbar-toggler {
   background: white;
+}
+
+.navbar-brand {
+  font-size: 48px;
+  color: var(--tertiary-color);
 }
 </style>

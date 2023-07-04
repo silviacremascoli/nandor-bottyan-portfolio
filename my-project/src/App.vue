@@ -29,6 +29,7 @@ export default class App extends Vue {}
 :root {
   --primary-color: #24263b;
   --secondary-color: #1f2235;
+  --tertiary-color: #ff4a57;
   --default-font: Helvetica, Arial, sans-serif;
 }
 body {

@@ -5,20 +5,23 @@
       <a href="https://silviacremascoli.com" target="_blank"
         >Silvia Cremascoli</a
       >
-      👩‍💻
     </p>
   </footer>
 </template>
 <style>
 footer {
   color: white;
+  background: var(--secondary-color);
+  padding: 20px 0;
 }
 
 footer a {
-  color: white;
+  color: var(--tertiary-color);
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
 }
 
 footer a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 </style>

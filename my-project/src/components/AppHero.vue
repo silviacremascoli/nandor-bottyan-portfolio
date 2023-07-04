@@ -2,7 +2,7 @@
   <ParticlesBg />
   <div class="header">
     <h1>Nandor Bottyan</h1>
-    <h2 class="typewriter">Blockchain Architect and IoT Solution Architect</h2>
+    <h2 class="typewriter">Blockchain and IoT Solution Architect</h2>
   </div>
 </template>
 
@@ -34,7 +34,7 @@ h1 {
 }
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid #ff4a57; /* The typwriter cursor */
+  border-right: 0.15em solid var(--tertiary-color); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
@@ -59,7 +59,13 @@ h1 {
     border-color: transparent;
   }
   50% {
-    border-color: #ff4a57;
+    border-color: var(--tertiary-color);
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 30px 50px;
   }
 }
 </style>
