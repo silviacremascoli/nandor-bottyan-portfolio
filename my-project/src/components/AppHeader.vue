@@ -18,7 +18,7 @@
           <a class="nav-link" aria-current="page" href="#">Home</a>
           <a class="nav-link" href="#">About me</a>
           <a class="nav-link" href="#">My Projects</a>
-          <a class="nav-link disabled">Contact me</a>
+          <a class="nav-link" href="#">Contact me</a>
         </div>
       </div>
     </div>
@@ -35,7 +35,11 @@ nav {
 .nav-link {
   color: white;
   font-size: 18px;
-  font-weight: 500;
+  letter-spacing: 2px;
+  transition: all 400ms ease-in-out;
+}
+.nav-link:hover {
+  color: var(--tertiary-color);
 }
 
 .navbar-toggler {

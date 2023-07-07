@@ -3,6 +3,7 @@
     <AppHeader />
     <AppHero />
     <AppSkills />
+    <AppAbout />
     <AppFooter />
   </div>
 </template>
@@ -12,6 +13,7 @@ import { Options, Vue } from "vue-class-component";
 import AppHero from "./components/AppHero.vue";
 import AppHeader from "./components/AppHeader.vue";
 import AppSkills from "./components/AppSkills.vue";
+import AppAbout from "./components/AppAbout.vue";
 import AppFooter from "./components/AppFooter.vue";
 
 @Options({
@@ -19,6 +21,7 @@ import AppFooter from "./components/AppFooter.vue";
     AppHeader,
     AppHero,
     AppSkills,
+    AppAbout,
     AppFooter,
   },
 })
