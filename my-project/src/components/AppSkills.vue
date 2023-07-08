@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2 class="mb-4">My services</h2>
+    <h2 class="mb-4" id="skills">Expertise</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet sem
       leo.<br />
@@ -121,9 +121,9 @@ i {
 }
 
 .skill-box {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   background: var(--primary-color);
   border-radius: 8px;
   padding: 20px 40px;

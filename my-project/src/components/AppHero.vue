@@ -72,6 +72,11 @@ h1 {
   max-width: 930px;
 }
 
+h2 {
+  font-size: 42px;
+  font-weight: 500;
+}
+
 /* The typing effect */
 @keyframes typing {
   from {

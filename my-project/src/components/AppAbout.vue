@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <div class="container">
+    <div class="container" id="about-me">
       <div class="row p-5">
         <div class="col-lg-6 description d-flex flex-column justify-center">
           <h2 class="mb-3">Who am I?</h2>
@@ -71,7 +71,8 @@ export default {};
   max-width: 100%;
 }
 h2 {
-  font-size: 42px;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .description {

@@ -1,27 +1,30 @@
 <template>
   <div id="app">
-    <AppHeader />
+    <AppNav />
     <AppHero />
     <AppSkills />
     <AppAbout />
+    <AppProjects />
     <AppFooter />
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import AppNav from "./components/AppNav.vue";
 import AppHero from "./components/AppHero.vue";
-import AppHeader from "./components/AppHeader.vue";
 import AppSkills from "./components/AppSkills.vue";
 import AppAbout from "./components/AppAbout.vue";
+import AppProjects from "./components/AppProjects.vue";
 import AppFooter from "./components/AppFooter.vue";
 
 @Options({
   components: {
-    AppHeader,
+    AppNav,
     AppHero,
     AppSkills,
     AppAbout,
+    AppProjects,
     AppFooter,
   },
 })
