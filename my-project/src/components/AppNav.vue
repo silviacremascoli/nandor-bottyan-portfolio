@@ -19,7 +19,7 @@
           <a class="nav-link" href="#skills">Expertise</a>
           <a class="nav-link" href="#about-me">About me</a>
           <a class="nav-link" href="#projects">My Projects</a>
-          <a class="nav-link mb-3" href="#">Contact me</a>
+          <a class="nav-link mb-3" href="#contact">Contact me</a>
         </div>
       </div>
     </div>

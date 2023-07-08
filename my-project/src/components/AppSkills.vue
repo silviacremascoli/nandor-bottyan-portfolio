@@ -120,12 +120,20 @@ i {
   font-size: 36px;
 }
 
+hr {
+  border: 0;
+  height: 2px;
+  width: 10%;
+  position: relative;
+  margin: 30px auto;
+  background: var(--tertiary-color);
+}
 .skill-box {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center; */
+  justify-content: center;
   background: var(--primary-color);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 20px 40px;
   margin: 0 10px;
   max-width: 20%;
@@ -143,14 +151,5 @@ i {
 
 .clouds {
   fill: var(--tertiary-color);
-}
-
-hr {
-  border: 0;
-  height: 2px;
-  width: 10%;
-  position: relative;
-  margin: 30px auto;
-  background: var(--tertiary-color);
 }
 </style>

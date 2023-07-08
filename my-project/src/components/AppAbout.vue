@@ -22,7 +22,7 @@
           <img
             src="./media/Industry-4.0-graphic.png"
             alt="industry 4.0 graphic"
-            class="d-flex flex-column justify-center"
+            class="img-fluid d-flex flex-column justify-center"
           />
         </div>
       </div>

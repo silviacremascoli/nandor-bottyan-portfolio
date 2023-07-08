@@ -5,6 +5,7 @@
     <AppSkills />
     <AppAbout />
     <AppProjects />
+    <AppContact />
     <AppFooter />
   </div>
 </template>
@@ -16,6 +17,7 @@ import AppHero from "./components/AppHero.vue";
 import AppSkills from "./components/AppSkills.vue";
 import AppAbout from "./components/AppAbout.vue";
 import AppProjects from "./components/AppProjects.vue";
+import AppContact from "./components/AppContact.vue";
 import AppFooter from "./components/AppFooter.vue";
 
 @Options({
@@ -25,6 +27,7 @@ import AppFooter from "./components/AppFooter.vue";
     AppSkills,
     AppAbout,
     AppProjects,
+    AppContact,
     AppFooter,
   },
 })
