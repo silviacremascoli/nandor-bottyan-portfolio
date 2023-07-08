@@ -19,11 +19,17 @@
           </p>
         </div>
         <div class="col-lg-6">
-          <img
+          <!-- <img
             src="./media/Industry-4.0-graphic.png"
             alt="industry 4.0 graphic"
             class="img-fluid d-flex flex-column justify-center"
-          />
+          /> -->
+          <video
+            src="./media/industry-4.0.mp4"
+            width="600"
+            autoplay
+            loop
+          ></video>
         </div>
       </div>
     </div>
@@ -80,9 +86,8 @@ h2 {
   text-align: justify;
 }
 
-img {
-  max-width: 550px;
-  padding-top: 40px;
+video {
+  padding-top: 60px;
 }
 
 .clouds {

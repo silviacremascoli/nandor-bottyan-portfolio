@@ -2,6 +2,30 @@
   <div class="container">
     <h2 id="contact">Contact me</h2>
     <div class="row">
+      <div class="col-lg-4 mt-5 d-flex flex-column justify-content-center">
+        <div class="text-center">
+          <h2 class="mb-5">Or find me here:</h2>
+          <h3><i class="fa-regular fa-envelope me-2"></i>Email</h3>
+          <p>
+            <a
+              href="mailto:silcremascoli@gmail.com"
+              class="contact-link"
+              title="Email Silvia Cremascoli"
+              >silcremascoli@gmail.com</a
+            >
+          </p>
+          <h3><i class="fa-brands fa-linkedin me-2"></i>LinkedIn</h3>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/silvia-cremascoli/"
+              class="contact-link"
+              target="_blank"
+              title="LinkedIn Silvia Cremascoli"
+              >@Silvia Cremascoli</a
+            >
+          </p>
+        </div>
+      </div>
       <div class="col-lg-6 mt-5 contact-form">
         <h2 class="mb-5 text-center">Write me a message</h2>
         <form method="POST" name="contact" netlify>
@@ -37,30 +61,6 @@
           </div>
           <button type="submit" class="btn btn-main">Send!</button>
         </form>
-      </div>
-      <div class="col-lg-6 mt-5 d-flex flex-column justify-content-center">
-        <div class="text-center">
-          <h2 class="mb-5">Or find me here:</h2>
-          <h3><i class="fa-regular fa-envelope me-2"></i>Email</h3>
-          <p>
-            <a
-              href="mailto:silcremascoli@gmail.com"
-              class="contact-link"
-              title="Email Silvia Cremascoli"
-              >silcremascoli@gmail.com</a
-            >
-          </p>
-          <h3><i class="fa-brands fa-linkedin me-2"></i>LinkedIn</h3>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/silvia-cremascoli/"
-              class="contact-link"
-              target="_blank"
-              title="LinkedIn Silvia Cremascoli"
-              >@Silvia Cremascoli</a
-            >
-          </p>
-        </div>
       </div>
     </div>
     <svg
