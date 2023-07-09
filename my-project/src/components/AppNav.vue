@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><i class="fa-solid fa-cloud"></i></a>
+      <a class="navbar-brand" href="#"
+        ><img src="./media/logo_nav.png" alt="Nandor Bottyan logo" class="logo"
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -31,16 +33,19 @@ nav {
   background: var(--secondary-color);
 }
 .navbar {
-  padding: 10px 50px;
+  padding: 4px 50px;
 }
 .nav-link {
   color: white;
   font-size: 18px;
   letter-spacing: 2px;
+  text-align: left;
   transition: all 400ms ease-in-out;
+  transition: transform 0.5s;
 }
 .nav-link:hover {
   color: var(--tertiary-color);
+  transform: scale(1.1);
 }
 
 .navbar-toggler {
@@ -53,9 +58,8 @@ nav {
   outline: none;
   box-shadow: none;
 }
-.navbar-brand {
-  font-size: 48px;
-  color: var(--tertiary-color);
+.logo {
+  max-width: 70px;
 }
 
 @media (max-width: 992px) {

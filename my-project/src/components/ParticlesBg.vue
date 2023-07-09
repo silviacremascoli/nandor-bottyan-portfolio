@@ -58,8 +58,7 @@
             enable: true,
             outMode: 'bounce',
             random: false,
-            bounce: false,
-            speed: 'none',
+            speed: 1,
             straight: true,
           },
           number: {
