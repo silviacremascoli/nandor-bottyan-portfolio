@@ -36,7 +36,7 @@ nav {
   padding: 4px 50px;
 }
 .nav-link {
-  color: white;
+  color: var(--tertiary-color);
   font-size: 18px;
   letter-spacing: 2px;
   text-align: left;
@@ -44,7 +44,6 @@ nav {
   transition: transform 0.5s;
 }
 .nav-link:hover {
-  color: var(--tertiary-color);
   transform: scale(1.1);
 }
 

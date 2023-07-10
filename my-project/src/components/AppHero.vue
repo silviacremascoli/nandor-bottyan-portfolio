@@ -2,7 +2,7 @@
   <ParticlesBg />
   <div class="header">
     <h1>Nándor Bottyán</h1>
-    <h2 class="typewriter mb-3">Blockchain and IoT Solution Architect</h2>
+    <h2 class="mb-5">Blockchain and IoT Solution Architect</h2>
     <svg
       class="clouds"
       xmlns="http://www.w3.org/2000/svg"
@@ -40,65 +40,29 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
 import ParticlesBg from "./ParticlesBg.vue";
 
-@Options({
+export default {
+  name: "AppHero",
   components: {
     ParticlesBg,
   },
-})
-export default class AppHero extends Vue {
-  msg!: string;
-}
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .header {
-  padding-top: 70px;
+  padding-top: 100px;
 }
 h1 {
   margin-bottom: 20px;
   font-size: 64px;
-}
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 3px solid var(--tertiary-color); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 6px; /* Adjust as needed */
-  animation: typing 4s steps(47, end), blink-caret 0.75s step-end infinite;
-  max-width: 930px;
 }
 
 h2 {
   font-size: 42px;
   font-weight: 500;
 }
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--tertiary-color);
-  }
-}
-
 .clouds {
-  fill: var(--secondary-color);
+  fill: var(--tertiary-color);
 }
 </style>

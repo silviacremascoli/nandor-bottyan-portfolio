@@ -38,19 +38,20 @@
 </template>
 <style scoped>
 .container {
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
   max-width: 100%;
   padding: 0;
 }
 footer {
   color: white;
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
   padding: 25px 0;
   letter-spacing: 1px;
+  font-weight: 500;
 }
 
 footer a {
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   transition: all 200ms ease-in-out;
 }
@@ -65,8 +66,8 @@ footer a:hover {
 
 .social-links a {
   margin: 0 15px;
-  color: var(--primary-color);
-  background: var(--tertiary-color);
+  color: var(--tertiary-color);
+  background: var(--secondary-color);
   padding: 10px 16px;
   font-size: 18px;
   border-radius: 50%;
@@ -76,7 +77,6 @@ footer a:hover {
 }
 
 .social-links a:hover {
-  color: var(--tertiary-color);
   background: var(--primary-color);
   transform: scale(1.2);
 }

@@ -99,7 +99,7 @@
 </template>
 <style scoped>
 .container {
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
   color: white;
   margin: 0 auto;
   max-width: 100%;
@@ -122,11 +122,11 @@ i {
 
 hr {
   border: 0;
-  height: 2px;
+  height: 2.5px;
   width: 10%;
   position: relative;
   margin: 30px auto;
-  background: var(--tertiary-color);
+  background: var(--primary-color);
 }
 .skill-box {
   display: flex;
@@ -142,6 +142,8 @@ hr {
 
 .skill-box:hover {
   background: var(--tertiary-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
   cursor: default;
 }
 
@@ -150,6 +152,6 @@ hr {
 }
 
 .clouds {
-  fill: var(--tertiary-color);
+  fill: var(--secondary-color);
 }
 </style>

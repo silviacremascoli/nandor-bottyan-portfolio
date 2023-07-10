@@ -25,7 +25,7 @@
             class="img-fluid d-flex flex-column justify-center"
           /> -->
           <video
-            src="./media/industry-4.0.mp4"
+            src="./media/industry_4.0.mp4"
             width="600"
             autoplay
             loop
@@ -73,7 +73,7 @@ export default {};
 </script>
 <style>
 .about {
-  background: var(--tertiary-color);
+  background: var(--secondary-color);
   max-width: 100%;
 }
 h2 {
@@ -92,7 +92,7 @@ video {
 
 .clouds {
   max-width: 100%;
-  fill: var(--secondary-color);
+  fill: var(--tertiary-color);
   margin-bottom: 0;
 }
 </style>

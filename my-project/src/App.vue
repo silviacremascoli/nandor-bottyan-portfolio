@@ -11,7 +11,6 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
 import AppNav from "./components/AppNav.vue";
 import AppHero from "./components/AppHero.vue";
 import AppSkills from "./components/AppSkills.vue";
@@ -20,7 +19,8 @@ import AppProjects from "./components/AppProjects.vue";
 import AppContact from "./components/AppContact.vue";
 import AppFooter from "./components/AppFooter.vue";
 
-@Options({
+export default {
+  name: "App",
   components: {
     AppNav,
     AppHero,
@@ -30,8 +30,7 @@ import AppFooter from "./components/AppFooter.vue";
     AppContact,
     AppFooter,
   },
-})
-export default class App extends Vue {}
+};
 </script>
 
 <style>

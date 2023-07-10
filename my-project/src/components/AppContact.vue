@@ -2,32 +2,13 @@
   <div class="container">
     <h2 id="contact">Contact me</h2>
     <div class="row">
-      <div class="col-lg-4 mt-5 d-flex flex-column justify-content-center">
-        <div class="text-center">
-          <h2 class="mb-5">Or find me here:</h2>
-          <h3><i class="fa-regular fa-envelope me-2"></i>Email</h3>
-          <p>
-            <a
-              href="mailto:silcremascoli@gmail.com"
-              class="contact-link"
-              title="Email Silvia Cremascoli"
-              >silcremascoli@gmail.com</a
-            >
-          </p>
-          <h3><i class="fa-brands fa-linkedin me-2"></i>LinkedIn</h3>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/silvia-cremascoli/"
-              class="contact-link"
-              target="_blank"
-              title="LinkedIn Silvia Cremascoli"
-              >@Silvia Cremascoli</a
-            >
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-6 mt-5 contact-form">
-        <h2 class="mb-5 text-center">Write me a message</h2>
+      <div class="col-4">Email me</div>
+      <div class="col-4">Call me</div>
+      <div class="col-4">Find me on LinkedIn</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 mt-5 contact-form">
+        <h2 class="mb-5 text-center">Or write me a message here:</h2>
         <form method="POST" name="contact" netlify>
           <div class="form-group mb-3">
             <label for="name-surname" class="ms-2">Name and surname</label>
@@ -59,7 +40,9 @@
               required
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-main">Send!</button>
+          <button v-on:click="sent" type="submit" class="btn btn-main">
+            Send!
+          </button>
         </form>
       </div>
     </div>
@@ -98,9 +81,19 @@
     </svg>
   </div>
 </template>
+<script>
+export default {
+  name: "AppContact",
+  methods: {
+    sent: function (event) {
+      alert("Thank you! I'll answer you as soon as possible!");
+    },
+  },
+};
+</script>
 <style scoped>
 .container {
-  background: var(--tertiary-color);
+  background: var(--secondary-color);
   max-width: 100%;
   padding: 30px 0 0 0;
 }
@@ -121,7 +114,6 @@
 }
 
 .contact-form {
-  border-right: 1px solid white;
   margin: 0 auto;
   padding: 0 80px;
   color: var(--quaternary-color);
