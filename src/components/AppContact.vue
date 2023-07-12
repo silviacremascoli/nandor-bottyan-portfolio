@@ -3,48 +3,28 @@
     <h2 id="contact">Contact me</h2>
     <div class="row contact-options">
       <div class="col-lg-4 contact-option">
-        <div class="row">
-          <div class="col-2">
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <div
-            class="col-10 d-flex flex-lg-column justify-content-center text-start"
+        <div class="d-flex flex-lg-column justify-content-center">
+          <i class="fa-solid fa-envelope mb-3"></i>
+          <a href="mailto:nandor.bottyan@gmail.com" class="fw-semibold"
+            >nandor.bottyan@gmail.com</a
           >
-            <p class="fw-semibold">
-              Email me <br />
-              nandor.bottyan@gmail.com
-            </p>
-          </div>
         </div>
       </div>
       <div class="col-lg-4 contact-option">
-        <div class="row">
-          <div class="col-2">
-            <i class="fa-solid fa-phone"></i>
-          </div>
-          <div class="col-10 text-start">
-            <p class="fw-semibold">
-              Call me <br />
-              +436704078150
-            </p>
-          </div>
+        <div class="d-flex flex-lg-column justify-content-center">
+          <i class="fa-solid fa-phone mb-3"></i>
+          <p class="fw-semibold">+436704078150</p>
         </div>
       </div>
       <div class="col-lg-4 contact-option">
-        <div class="row">
-          <div class="col-2">
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
-          <div class="col-10 d-flex flex-row justify-content-center text-start">
-            <p class="fw-semibold">
-              Find me on LinkedIn <br />
-              <a
-                href="https://www.linkedin.com/in/nandor-bottyan-1036b478/"
-                target="_blank"
-                >/nandor-bottyan-1036b478</a
-              >
-            </p>
-          </div>
+        <div class="d-flex flex-lg-column justify-content-center">
+          <i class="fa-brands fa-linkedin mb-3"></i>
+          <a
+            href="https://www.linkedin.com/in/nandor-bottyan-1036b478/"
+            target="_blank"
+            class="fw-semibold"
+            >/nandor-bottyan-1036b478</a
+          >
         </div>
       </div>
     </div>
@@ -158,9 +138,23 @@ export default {
   padding: 25px;
 }
 
-i {
+.contact-option i {
   color: var(--tertiary-color);
   font-size: 36px;
+}
+
+.contact-option p {
+  margin-bottom: 0px;
+}
+
+.contact-option a {
+  color: white;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+.contact-option a:hover {
+  color: var(--tertiary-color);
 }
 
 .contact-form {
