@@ -16,7 +16,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
+        <div class="navbar-nav ms-auto nav-underline">
           <a class="nav-link" aria-current="page" href="#">Home</a>
           <a class="nav-link" href="#skills">Expertise</a>
           <a class="nav-link" href="#about-me">About me</a>
@@ -40,6 +40,7 @@ nav {
   font-size: 18px;
   letter-spacing: 2px;
   text-align: left;
+  padding-bottom: 2px;
   transition: all 400ms ease-in-out;
   transition: transform 0.5s;
 }

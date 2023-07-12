@@ -1,12 +1,54 @@
 <template>
   <div class="container">
     <h2 id="contact">Contact me</h2>
-    <div class="row">
-      <div class="col-4">Email me</div>
-      <div class="col-4">Call me</div>
-      <div class="col-4">Find me on LinkedIn</div>
+    <div class="row contact-options">
+      <div class="col-lg-4 contact-option">
+        <div class="row">
+          <div class="col-2">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div
+            class="col-10 d-flex flex-lg-column justify-content-center text-start"
+          >
+            <p class="fw-semibold">
+              Email me <br />
+              nandor.bottyan@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 contact-option">
+        <div class="row">
+          <div class="col-2">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="col-10 text-start">
+            <p class="fw-semibold">
+              Call me <br />
+              +436704078150
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 contact-option">
+        <div class="row">
+          <div class="col-2">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="col-10 d-flex flex-row justify-content-center text-start">
+            <p class="fw-semibold">
+              Find me on LinkedIn <br />
+              <a
+                href="https://www.linkedin.com/in/nandor-bottyan-1036b478/"
+                target="_blank"
+                >/nandor-bottyan-1036b478</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row">
+    <div class="row form">
       <div class="col-lg-12 mt-5 contact-form">
         <h2 class="mb-5 text-center">Or write me a message here:</h2>
         <form method="POST" name="contact" netlify>
@@ -15,6 +57,7 @@
             <input
               type="text"
               class="form-control mt-2"
+              placeholder="Your name and surname"
               id="name-surname"
               name="name"
               required
@@ -24,6 +67,7 @@
             <label for="email-address" class="ms-2">Email address</label>
             <input
               type="email"
+              placeholder="Email Address"
               class="form-control mt-2"
               id="email-address"
               name="email"
@@ -97,20 +141,26 @@ export default {
   max-width: 100%;
   padding: 30px 0 0 0;
 }
-.row {
+.form,
+.contact-options {
   padding: 30px 60px;
 }
 
-.contact-details h1 {
-  font-size: 64px;
+.contact-options {
+  justify-content: center;
 }
 
-.contact-details h2 {
+.contact-option {
+  background: var(--primary-color);
+  border-radius: 12px;
+  width: 25%;
+  margin: 0 30px;
+  padding: 25px;
+}
+
+i {
+  color: var(--tertiary-color);
   font-size: 36px;
-}
-
-.contact-details h3 {
-  font-size: 24px;
 }
 
 .contact-form {
@@ -121,8 +171,15 @@ export default {
 
 .contact-form input,
 .contact-form textarea {
-  color: var(--quaternary-color);
+  background: var(--primary-color);
+  border: none;
+  color: white;
 }
+
+/* .contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid white;
+} */
 
 .btn-main {
   background: var(--primary-color);

@@ -134,10 +134,11 @@ hr {
   justify-content: center;
   background: var(--primary-color);
   border-radius: 12px;
+  border: 0.5px solid var(--primary-color);
   padding: 20px 40px;
   margin: 0 10px;
   max-width: 20%;
-  transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in;
 }
 
 .skill-box:hover {
