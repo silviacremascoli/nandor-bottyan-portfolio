@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="social-links pt-4 d-flex justify-content-center">
+  <footer>
+    <div class="social-links pb-4 d-flex justify-content-center">
       <a
         href="https://www.linkedin.com/in/silvia-cremascoli/"
         target="_blank"
@@ -14,34 +14,27 @@
         ><i class="fa-brands fa-github"></i
       ></a>
       <a
+        href="https://drive.google.com/file/d/1-nZm2vqTzP2DF2JLJHuSTcbyV-6yny3t/view?usp=share_link"
+        target="_blank"
+        title="Youtube Nandor Bottyan"
+        ><i class="fa-brands fa-youtube"></i
+      ></a>
+      <a
         href="https://drive.google.com/file/d/1lcpjhCugvGs7G4qIBis6Uv1gtVaqoWjo/view?usp=drive_link"
         target="_blank"
         title="Resume Silvia Cremascoli"
         ><i class="fa-solid fa-file"></i
       ></a>
-      <a
-        href="https://drive.google.com/file/d/1-nZm2vqTzP2DF2JLJHuSTcbyV-6yny3t/view?usp=share_link"
-        target="_blank"
-        title="Certificates Silvia Cremascoli"
-        ><i class="fa-solid fa-certificate"></i
-      ></a>
     </div>
-    <footer>
-      <p>
-        This website was coded by
-        <a href="https://silviacremascoli.com" target="_blank"
-          >Silvia Cremascoli</a
-        >
-      </p>
-    </footer>
-  </div>
+    <p>
+      This website was coded by
+      <a href="https://silviacremascoli.com" target="_blank"
+        >Silvia Cremascoli</a
+      >
+    </p>
+  </footer>
 </template>
 <style scoped>
-.container {
-  background: var(--tertiary-color);
-  max-width: 100%;
-  padding: 0;
-}
 footer {
   color: white;
   background: var(--tertiary-color);
