@@ -1,31 +1,47 @@
 <template>
   <ParticlesBg />
-  <div class="header">
+  <header class="header">
     <h1>Nándor Bottyán</h1>
-    <button v-on:click.prevent="scrollToTop" id="scroll-top-button">
+    <button
+      v-on:click.prevent="scrollToTop"
+      id="scroll-top-button"
+      ref="scrollTopButton"
+    >
       <i class="fa-solid fa-arrow-up"></i>
     </button>
     <h2 class="mb-5">Blockchain and IoT Solution Architect</h2>
     <AppClouds />
-  </div>
+  </header>
 </template>
 
 <script lang="ts">
 import ParticlesBg from "./ParticlesBg.vue";
 import AppClouds from "./AppClouds.vue";
+import { defineComponent } from "vue";
 
-export default {
+export default defineComponent({
   name: "AppHero",
   components: {
     ParticlesBg,
     AppClouds,
   },
+  // created() {
+  //   window.addEventListener("scroll", this.handleScroll);
+  // },
+  // unmounted() {
+  //   window.removeEventListener("scroll", this.handleScroll);
+  // },
   methods: {
-    scrollToTop() {
+    scrollToTop(event: Event) {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
+    // handleScroll(event: Event) {
+    //   if (window.scrollY > 20) {
+    //     alert("Hello!");
+    //   }
+    // },
   },
-};
+});
 </script>
 <style scoped>
 .header {
@@ -33,7 +49,8 @@ export default {
 }
 h1 {
   margin-bottom: 20px;
-  font-size: 64px;
+  font-size: 72px;
+  font-family: var(--heading-font);
 }
 
 #scroll-top-button {

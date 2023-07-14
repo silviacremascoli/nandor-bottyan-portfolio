@@ -1,8 +1,10 @@
 <template>
-  <div class="about">
+  <section class="about-section">
     <div class="container" id="about-me">
       <div class="row p-5">
-        <div class="col-lg-6 description d-flex flex-column justify-center">
+        <div
+          class="col-lg-6 description d-flex flex-column justify-center animate__animated animate__fadeInLeft"
+        >
           <h2 class="mb-3">Who am I?</h2>
           <p>
             Cras efficitur lacus commodo consequat rhoncus. Pellentesque
@@ -19,22 +21,23 @@
           </p>
         </div>
         <div class="col-lg-6">
-          <!-- <img
-            src="./media/Industry-4.0-graphic.png"
-            alt="industry 4.0 graphic"
-            class="img-fluid d-flex flex-column justify-center"
-          /> -->
           <video
             src="./media/industry_4.0.mp4"
             width="600"
+            class="img-fluid"
             autoplay
             loop
           ></video>
         </div>
       </div>
+      <img
+        src="./media/floating_cloud.png"
+        class="floating-cloud"
+        alt="floating cloud"
+      />
     </div>
     <AppClouds />
-  </div>
+  </section>
 </template>
 <script lang="ts">
 import AppClouds from "./AppClouds.vue";
@@ -46,14 +49,15 @@ export default {
   },
 };
 </script>
-<style>
-.about {
+<style scoped>
+.about-section {
   background: var(--secondary-color);
   max-width: 100%;
 }
 h2 {
   font-size: 48px;
   font-weight: 700;
+  font-family: var(--heading-font);
 }
 
 .description {
@@ -62,12 +66,50 @@ h2 {
 }
 
 video {
-  padding-top: 60px;
+  padding-top: 70px;
+}
+
+.floating-cloud {
+  width: 50px;
+  height: 50px;
+  animation: fly 10s linear infinite;
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0.11vh);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(110vw, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0.11vh);
+    opacity: 0.5;
+  }
 }
 
 .clouds {
   max-width: 100%;
   fill: var(--tertiary-color);
   margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .description {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  video {
+    padding-top: 30px;
+    max-width: 400px;
+  }
 }
 </style>

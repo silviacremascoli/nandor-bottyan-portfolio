@@ -1,69 +1,90 @@
 <template>
-  <div class="container">
+  <section class="skills-section">
     <h2 class="mb-4" id="skills">Expertise</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet sem
       leo.<br />
       Praesent pellentesque nisi id augue tempus, eu dictum augue lobortis.
     </p>
-    <hr class="center-diamond" />
-    <div class="skill">
-      <div class="container">
-        <div class="row pb-5">
-          <div class="col-lg-3 skill-box blockchain">
-            <i class="fa-solid fa-link mb-3"></i>
-            <h3 class="mb-4">Blockchain</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit
-              amet sem leo. Praesent pellentesque nisi id augue tempus, eu
-              dictum augue lobortis. Donec tincidunt sagittis enim. Fusce
-              tincidunt sagittis nisi, vitae sodales mauris sollicitudin et.
-              Suspendisse bibendum orci eget vulputate auctor. Integer quis quam
-              elit. Maecenas sed ipsum eros.
-            </p>
-          </div>
-
-          <div class="col-lg-3 skill-box">
-            <i class="fa-brands fa-aws mb-3 mt-4"></i>
-            <h3 class="mb-4">Amazon Web Services</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit
-              amet sem leo. Praesent pellentesque nisi id augue tempus, eu
-              dictum augue lobortis. Donec tincidunt sagittis enim. Fusce
-              tincidunt sagittis nisi, vitae sodales mauris sollicitudin et.
-              Suspendisse bibendum orci eget vulputate auctor. Integer quis quam
-              elit. Maecenas sed ipsum eros.
-            </p>
-          </div>
-          <div class="col-lg-3 skill-box">
-            <i class="fa-brands fa-windows mb-3"></i>
-            <h3 class="mb-4">Microsoft Azure</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit
-              amet sem leo. Praesent pellentesque nisi id augue tempus, eu
-              dictum augue lobortis. Donec tincidunt sagittis enim. Fusce
-              tincidunt sagittis nisi, vitae sodales mauris sollicitudin et.
-              Suspendisse bibendum orci eget vulputate auctor. Integer quis quam
-              elit. Maecenas sed ipsum eros.
-            </p>
-          </div>
-          <div class="col-lg-3 skill-box">
-            <i class="fa-brands fa-google mb-3"></i>
-            <h3 class="mb-4">Google Cloud</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit
-              amet sem leo. Praesent pellentesque nisi id augue tempus, eu
-              dictum augue lobortis. Donec tincidunt sagittis enim. Fusce
-              tincidunt sagittis nisi, vitae sodales mauris sollicitudin et.
-              Suspendisse bibendum orci eget vulputate auctor. Integer quis quam
-              elit. Maecenas sed ipsum eros.
-            </p>
-          </div>
+    <hr />
+    <div class="container">
+      <div class="row pb-5">
+        <div class="col-lg-4">
+          <i class="fa-solid fa-link mb-3"></i>
+          <h3 class="mb-4">Blockchain</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit
+            amet sem leo. Praesent pellentesque nisi id augue tempus, eu dictum
+            augue lobortis. Donec tincidunt sagittis enim. Fusce tincidunt
+            sagittis nisi, vitae sodales mauris sollicitudin et. Suspendisse
+            bibendum orci eget vulputate auctor. Integer quis quam elit.
+            Maecenas sed ipsum eros.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <i class="fa-brands fa-aws mb-3"></i>
+          <h3 class="mb-4">Amazon Web Services</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit
+            amet sem leo. Praesent pellentesque nisi id augue tempus, eu dictum
+            augue lobortis. Donec tincidunt sagittis enim. Fusce tincidunt
+            sagittis nisi, vitae sodales mauris sollicitudin et. Suspendisse
+            bibendum orci eget vulputate auctor. Integer quis quam elit.
+            Maecenas sed ipsum eros.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <i class="fa-brands fa-windows mb-3"></i>
+          <h3 class="mb-4">Microsoft Azure</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit
+            amet sem leo. Praesent pellentesque nisi id augue tempus, eu dictum
+            augue lobortis. Donec tincidunt sagittis enim. Fusce tincidunt
+            sagittis nisi, vitae sodales mauris sollicitudin et. Suspendisse
+            bibendum orci eget vulputate auctor. Integer quis quam elit.
+            Maecenas sed ipsum eros.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <i class="fa-brands fa-google mb-3"></i>
+          <h3 class="mb-4">Google Cloud</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit
+            amet sem leo. Praesent pellentesque nisi id augue tempus, eu dictum
+            augue lobortis. Donec tincidunt sagittis enim. Fusce tincidunt
+            sagittis nisi, vitae sodales mauris sollicitudin et. Suspendisse
+            bibendum orci eget vulputate auctor. Integer quis quam elit.
+            Maecenas sed ipsum eros.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <i class="fa-solid fa-wifi mb-3"></i>
+          <h3 class="mb-4">IoT Solutions</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit
+            amet sem leo. Praesent pellentesque nisi id augue tempus, eu dictum
+            augue lobortis. Donec tincidunt sagittis enim. Fusce tincidunt
+            sagittis nisi, vitae sodales mauris sollicitudin et. Suspendisse
+            bibendum orci eget vulputate auctor. Integer quis quam elit.
+            Maecenas sed ipsum eros.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <i class="fa-solid fa-truck-field mb-3"></i>
+          <h3 class="mb-4">Supply Management</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit
+            amet sem leo. Praesent pellentesque nisi id augue tempus, eu dictum
+            augue lobortis. Donec tincidunt sagittis enim. Fusce tincidunt
+            sagittis nisi, vitae sodales mauris sollicitudin et. Suspendisse
+            bibendum orci eget vulputate auctor. Integer quis quam elit.
+            Maecenas sed ipsum eros.
+          </p>
         </div>
       </div>
     </div>
     <AppClouds />
-  </div>
+  </section>
 </template>
 <script lang="ts">
 import AppClouds from "./AppClouds.vue";
@@ -76,10 +97,9 @@ export default {
 };
 </script>
 <style scoped>
-.container {
+.skills-section {
   background: var(--tertiary-color);
   color: white;
-  margin: 0 auto;
   max-width: 100%;
   padding: 40px 0 0 0;
 }
@@ -87,11 +107,13 @@ export default {
 h2 {
   font-size: 48px;
   font-weight: 700;
+  font-family: var(--heading-font);
 }
 
 h3 {
   font-size: 24px;
   font-weight: 700;
+  font-family: var(--heading-font);
 }
 
 i {
@@ -106,31 +128,33 @@ hr {
   margin: 30px auto;
   background: var(--primary-color);
 }
-.skill-box {
+
+.container {
+  margin: 0 auto;
+}
+.col-lg-4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: var(--primary-color);
   border-radius: 12px;
   border: 0.5px solid var(--primary-color);
-  padding: 20px 40px;
-  margin: 0 10px;
-  max-width: 20%;
+  padding: 40px;
+  margin: 0 auto 10px auto;
   transition: all 400ms ease-in;
 }
 
-.skill-box:hover {
+.col-lg-4:hover {
   background: var(--tertiary-color);
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
   cursor: default;
 }
 
-.blockchain {
-  margin-left: 120px;
-}
-
 .clouds {
   fill: var(--secondary-color);
+}
+
+@media (max-width: 992px) {
 }
 </style>

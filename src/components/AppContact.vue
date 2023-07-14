@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <section class="contact-section">
     <h2 id="contact" class="mt-4">Contact me</h2>
     <p>
       If you would like to collaborate with me or you simply want to chat,<br />
@@ -8,7 +8,7 @@
     <hr />
     <div class="row contact-options">
       <div class="col-lg-4 contact-option">
-        <div class="d-flex flex-lg-column justify-content-center">
+        <div class="d-flex flex-column justify-content-center">
           <i class="fa-solid fa-envelope mb-3"></i>
           <p>Email me:</p>
           <a href="mailto:nandor.bottyan@gmail.com" class="fw-semibold"
@@ -17,21 +17,21 @@
         </div>
       </div>
       <div class="col-lg-4 contact-option">
-        <div class="d-flex flex-lg-column justify-content-center">
+        <div class="d-flex flex-column justify-content-center">
           <i class="fa-solid fa-phone mb-3"></i>
           <p>Call me:</p>
           <p class="fw-semibold">+436704078150</p>
         </div>
       </div>
       <div class="col-lg-4 contact-option">
-        <div class="d-flex flex-lg-column justify-content-center">
+        <div class="d-flex flex-column justify-content-center">
           <i class="fa-brands fa-linkedin mb-3"></i>
           <p>Find me on LinkedIn:</p>
           <a
-            href="https://www.linkedin.com/in/nandor-bottyan-1036b478/"
+            href="https://www.linkedin.com/in/nandor-bottyan/"
             target="_blank"
             class="fw-semibold"
-            >/nandor-bottyan-1036b478</a
+            >/nandor-bottyan</a
           >
         </div>
       </div>
@@ -41,7 +41,7 @@
         <h3 class="mb-5 text-center">Or write me a message here:</h3>
         <form method="POST" name="contact" netlify>
           <div class="row g-3">
-            <div class="col-sm">
+            <div class="col-lg">
               <input
                 type="text"
                 class="form-control"
@@ -49,7 +49,7 @@
                 aria-label="Name"
               />
             </div>
-            <div class="col-sm">
+            <div class="col-lg">
               <input
                 type="text"
                 class="form-control"
@@ -57,7 +57,7 @@
                 aria-label="Surname"
               />
             </div>
-            <div class="col-sm-7">
+            <div class="col-lg-7">
               <input
                 type="email"
                 class="form-control"
@@ -83,7 +83,7 @@
       </div>
     </div>
     <AppClouds />
-  </div>
+  </section>
 </template>
 <script lang="ts">
 import AppClouds from "./AppClouds.vue";
@@ -101,11 +101,17 @@ export default {
 };
 </script>
 <style scoped>
-.container {
+.contact-section {
   background: var(--secondary-color);
   max-width: 100%;
   padding: 30px 0 0 0;
 }
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: var(--heading-font);
+}
+
 hr {
   border: 0;
   height: 2.5px;
@@ -138,16 +144,18 @@ hr {
 
 .contact-option p {
   margin-bottom: 0px;
+  font-size: 18px;
 }
 
 .contact-option a {
   color: white;
+  font-size: 18px;
   text-decoration: none;
   transition: all 300ms ease-in-out;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
 }
 
@@ -201,6 +209,31 @@ h3 {
 }
 
 .clouds {
+  fill: var(--tertiary-color);
   max-width: 100%;
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .contact-option {
+    width: 75%;
+    margin-bottom: 20px;
+  }
+  .contact-form {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-option {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact-option a {
+    font-size: 16px;
+  }
+  .contact-form {
+    padding: 0 10px;
+  }
 }
 </style>

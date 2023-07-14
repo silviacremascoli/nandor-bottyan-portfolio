@@ -38,7 +38,7 @@ nav {
 .nav-link {
   color: var(--tertiary-color);
   font-size: 18px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   text-align: left;
   padding-bottom: 2px;
   transition: all 400ms ease-in-out;

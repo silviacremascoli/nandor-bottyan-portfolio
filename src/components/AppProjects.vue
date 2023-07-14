@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <section class="projects-section">
     <h2 id="projects" class="mb-4">My projects</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac porta
@@ -143,20 +143,20 @@
         </div>
       </div> -->
     <AppClouds />
-  </div>
+  </section>
 </template>
 <script lang="ts">
 import AppClouds from "./AppClouds.vue";
 
 export default {
-  name: "AppSkills",
+  name: "AppProjects",
   components: {
     AppClouds,
   },
 };
 </script>
 <style scoped>
-.container {
+.projects-section {
   background: var(--tertiary-color);
   max-width: 100%;
   padding: 40px 0 0 0;
@@ -164,6 +164,7 @@ export default {
 h2 {
   font-size: 48px;
   font-weight: 700;
+  font-family: var(--heading-font);
 }
 hr {
   border: 0;
@@ -196,5 +197,11 @@ hr {
   fill: var(--secondary-color);
   max-width: 100%;
   margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .container-projects {
+    margin: 0 30px 50px 30px;
+  }
 }
 </style>
