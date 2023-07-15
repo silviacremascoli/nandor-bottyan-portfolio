@@ -1,7 +1,7 @@
 <template>
   <section class="about-section">
     <div class="container" id="about-me">
-      <div class="row p-5">
+      <div class="row">
         <div
           class="col-lg-6 description d-flex flex-column justify-center animate__animated animate__fadeInLeft"
         >
@@ -20,7 +20,7 @@
             Integer condimentum tortor a nibh porta malesuada.
           </p>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 cloud-video">
           <video
             src="./media/industry_4.0.mp4"
             width="600"
@@ -61,12 +61,12 @@ h2 {
 }
 
 .description {
-  padding: 40px 100px;
+  padding: 60px 60px 40px 60px;
   text-align: justify;
 }
 
 video {
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .floating-cloud {
@@ -103,13 +103,24 @@ video {
 
 @media (max-width: 992px) {
   .description {
-    padding: 40px 0;
+    padding: 60px 0 30px 0;
     text-align: center;
   }
 
   video {
-    padding-top: 30px;
-    max-width: 400px;
+    padding: 30px 0 40px 0;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  video {
+    max-width: 300px;
+    padding: 0 0 20px 0;
+  }
+
+  .description {
+    padding: 40px 40px 20px 40px;
   }
 }
 </style>

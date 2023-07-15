@@ -17,7 +17,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto nav-underline">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link home-link" aria-current="page" href="#">Home</a>
           <a class="nav-link" href="#skills">Expertise</a>
           <a class="nav-link" href="#about-me">About me</a>
           <a class="nav-link" href="#projects">My Projects</a>
@@ -65,6 +65,16 @@ nav {
 @media (max-width: 992px) {
   .contact {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 4px 20px;
+  }
+
+  .home-link {
+    padding-top: 20px;
   }
 }
 </style>

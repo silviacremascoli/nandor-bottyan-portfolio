@@ -1,7 +1,7 @@
 <template>
   <section class="contact-section">
     <h2 id="contact" class="mt-4">Contact me</h2>
-    <p>
+    <p class="contact-text">
       If you would like to collaborate with me or you simply want to chat,<br />
       I'm looking forward to our encounter!
     </p>
@@ -215,6 +215,9 @@ h3 {
 }
 
 @media (max-width: 992px) {
+  .contact-text {
+    padding: 10px 40px;
+  }
   .contact-option {
     width: 75%;
     margin-bottom: 20px;
@@ -233,7 +236,7 @@ h3 {
     font-size: 16px;
   }
   .contact-form {
-    padding: 0 10px;
+    padding: 0;
   }
 }
 </style>

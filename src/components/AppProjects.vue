@@ -1,9 +1,8 @@
 <template>
   <section class="projects-section">
     <h2 id="projects" class="mb-4">My projects</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac porta
-      arcu.<br />
+    <p class="projects-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
       Donec nec urna orci. Aenean accumsan aliquam lobortis.
     </p>
     <hr class="center-diamond" />
@@ -166,6 +165,7 @@ h2 {
   font-weight: 700;
   font-family: var(--heading-font);
 }
+
 hr {
   border: 0;
   height: 2.5px;
@@ -201,7 +201,14 @@ hr {
 
 @media (max-width: 992px) {
   .container-projects {
-    margin: 0 30px 50px 30px;
+    margin: 0 20px 40px 20px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-text {
+    padding: 0 40px;
   }
 }
 </style>
