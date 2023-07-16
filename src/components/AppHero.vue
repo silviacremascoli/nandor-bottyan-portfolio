@@ -4,8 +4,8 @@
     <h1>Nándor Bottyán</h1>
     <button
       v-on:click.prevent="scrollToTop"
+      v-on:scroll="handleScroll"
       id="scroll-top-button"
-      ref="scrollTopButton"
     >
       <i class="fa-solid fa-arrow-up"></i>
     </button>
@@ -17,31 +17,31 @@
 <script lang="ts">
 import ParticlesBg from "./ParticlesBg.vue";
 import AppClouds from "./AppClouds.vue";
-import { defineComponent } from "vue";
 
-export default defineComponent({
+export default {
   name: "AppHero",
   components: {
     ParticlesBg,
     AppClouds,
   },
-  // created() {
-  //   window.addEventListener("scroll", this.handleScroll);
-  // },
-  // unmounted() {
-  //   window.removeEventListener("scroll", this.handleScroll);
-  // },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  unmounted() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
   methods: {
     scrollToTop(event: Event) {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
-    // handleScroll(event: Event) {
-    //   if (window.scrollY > 20) {
-    //     alert("Hello!");
-    //   }
-    // },
+    handleScroll(event: Event) {
+      if (window.scrollY > 20) {
+        const button = document.querySelector("#scroll-top-button");
+        button?.classList.add(".visible");
+      }
+    },
   },
-});
+};
 </script>
 <style scoped>
 .header {
@@ -54,6 +54,7 @@ h1 {
 }
 
 #scroll-top-button {
+  display: none;
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -68,6 +69,10 @@ h1 {
   cursor: pointer;
   transition: all 300ms ease-in-out;
   transition: transform 0.5s;
+}
+
+.visible {
+  display: block;
 }
 
 #scroll-top-button i {

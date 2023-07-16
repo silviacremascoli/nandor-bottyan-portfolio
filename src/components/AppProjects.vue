@@ -178,7 +178,7 @@ hr {
   background: var(--primary-color);
   max-width: 1200px;
   margin: 0 auto 50px auto;
-  padding: 40px;
+  padding: 30px;
   border-radius: 12px;
 }
 .embed {
