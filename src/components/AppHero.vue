@@ -4,13 +4,11 @@
     <h1>Nándor Bottyán</h1>
     <h2 class="mb-5">Blockchain and IoT Solution Architect</h2>
     <AppClouds />
-    <AppScrollTopButton />
   </header>
 </template>
 
 <script lang="ts">
 import ParticlesBg from "./ParticlesBg.vue";
-import AppScrollTopButton from "./AppScrollTopButton.vue";
 import AppClouds from "./AppClouds.vue";
 
 export default {
@@ -18,7 +16,6 @@ export default {
   components: {
     ParticlesBg,
     AppClouds,
-    AppScrollTopButton,
   },
 };
 </script>

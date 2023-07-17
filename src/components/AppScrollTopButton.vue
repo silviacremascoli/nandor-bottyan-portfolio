@@ -20,13 +20,13 @@ export default {
     };
   },
   mounted() {
-    window.addEventListener("scroll", this.updateScroll);
+    window.addEventListener("scroll", this.detectScroll);
   },
   methods: {
     scrollToTop(event: Event) {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
-    updateScroll() {
+    detectScroll(event: Event) {
       this.scrollPosition = window.scrollY;
       if (this.scrollPosition > 500) {
         this.display = true;
