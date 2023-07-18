@@ -33,3 +33,8 @@
     ></path>
   </svg>
 </template>
+<style>
+.clouds {
+  max-width: 100%;
+}
+</style>

@@ -33,7 +33,7 @@ nav {
   background: var(--secondary-color);
 }
 .navbar {
-  padding: 4px 50px;
+  padding: 5px 50px;
 }
 .nav-link {
   color: var(--tertiary-color);
@@ -59,7 +59,7 @@ nav {
   box-shadow: none;
 }
 .logo {
-  max-width: 70px;
+  max-width: 60px;
 }
 
 @media (max-width: 992px) {

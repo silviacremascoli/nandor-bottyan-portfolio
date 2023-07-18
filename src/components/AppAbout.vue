@@ -72,31 +72,29 @@ video {
 .floating-cloud {
   width: 50px;
   height: 50px;
-  animation: fly 10s linear infinite;
   top: 0;
   right: 0;
   position: fixed;
-  z-index: 999;
   pointer-events: none;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
-@keyframes fly {
+@keyframes floating {
   0% {
-    transform: translate(0.11vh);
-    opacity: 0.5;
+    transform: translate(0, 0px);
   }
   50% {
-    transform: translate(110vw, 0);
-    opacity: 1;
+    transform: translate(0, 15px);
   }
   100% {
-    transform: translate(0.11vh);
-    opacity: 0.5;
+    transform: translate(0, -0px);
   }
 }
 
 .clouds {
-  max-width: 100%;
   fill: var(--tertiary-color);
   margin-bottom: 0;
 }

@@ -49,10 +49,14 @@ export default {
 body {
   font-family: var(--main-font);
   background: var(--primary-color);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
   text-align: center;
   color: white;
   max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
 }
 </style>
