@@ -4,16 +4,14 @@
     id="scroll-top-button"
     :style="{ display: display ? 'block' : 'none' }"
   >
-    <i class="fa-solid fa-arrow-up"></i>
+    <i class="fa-regular fa-hand-point-up"></i>
   </button>
 </template>
+
 <script lang="ts">
 export default {
   name: "AppScrollTopButton",
-  data(): {
-    display: boolean;
-    scrollPosition: number;
-  } {
+  data() {
     return {
       display: false,
       scrollPosition: 0,
@@ -22,11 +20,14 @@ export default {
   mounted() {
     window.addEventListener("scroll", this.detectScroll);
   },
+  unmounted() {
+    window.removeEventListener("scroll", this.detectScroll);
+  },
   methods: {
-    scrollToTop(event: Event) {
+    scrollToTop(event: Event): any {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
-    detectScroll(event: Event) {
+    detectScroll(event: Event): any {
       this.scrollPosition = window.scrollY;
       if (this.scrollPosition > 500) {
         this.display = true;
