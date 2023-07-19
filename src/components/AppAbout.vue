@@ -30,11 +30,23 @@
           ></video>
         </div>
       </div>
-      <img
-        src="./media/floating_cloud.png"
-        class="floating-cloud"
-        alt="floating cloud"
-      />
+      <div class="floating-clouds">
+        <img
+          src="./media/floating_cloud.png"
+          class="floating-cloud-1"
+          alt="floating cloud"
+        />
+        <img
+          src="./media/floating_cloud.png"
+          class="floating-cloud-2"
+          alt="floating cloud"
+        />
+        <img
+          src="./media/floating_cloud.png"
+          class="floating-cloud-3"
+          alt="floating cloud"
+        />
+      </div>
     </div>
     <AppClouds />
   </section>
@@ -69,28 +81,125 @@ video {
   padding-top: 40px;
 }
 
-.floating-cloud {
-  width: 50px;
-  height: 50px;
-  top: 0;
-  right: 0;
-  position: fixed;
-  pointer-events: none;
-  animation-name: floating;
-  animation-duration: 3s;
+.floating-cloud-1 {
+  top: 2000px;
+  max-width: 70px;
+  -webkit-animation: cloud-1 35s linear 6s infinite;
+  animation: cloud-1 35s linear 6s infinite;
+  animation-duration: 35s;
+  animation-timing-function: linear;
+  animation-delay: 6s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: cloud-1;
+  opacity: 0;
 }
 
-@keyframes floating {
+.floating-cloud-2 {
+  top: 1800px;
+  max-width: 50px;
+  -webkit-animation: cloud-2 25s linear 4s infinite;
+  animation: cloud-2 25s linear 6s infinite;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: cloud-2;
+  opacity: 0;
+}
+
+.floating-cloud-3 {
+  top: 2150px;
+  max-width: 60px;
+  -webkit-animation: cloud-3 30s linear 8s infinite;
+  animation: cloud-3 30s linear 6s infinite;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: cloud-3;
+  opacity: 0;
+}
+.floating-clouds img {
+  position: absolute;
+  z-index: 0;
+  height: auto;
+}
+
+@keyframes cloud-1 {
   0% {
-    transform: translate(0, 0px);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    right: 0;
   }
-  50% {
-    transform: translate(0, 15px);
+  10% {
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    right: 200px;
+  }
+  90% {
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    right: 1100px;
   }
   100% {
-    transform: translate(0, -0px);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    right: 1200px;
+  }
+}
+
+@keyframes cloud-2 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    right: 0;
+  }
+  10% {
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    right: 200px;
+  }
+  90% {
+    opacity: 0.4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    right: 1100px;
+  }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    right: 1200px;
+  }
+}
+
+@keyframes cloud-3 {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    right: 0;
+  }
+  10% {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    right: 200px;
+  }
+  90% {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    right: 1100px;
+  }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    right: 1200px;
   }
 }
 
