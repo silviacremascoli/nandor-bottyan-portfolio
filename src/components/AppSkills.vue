@@ -130,13 +130,7 @@ h3 {
 
 i {
   font-size: 36px;
-}
-
-.skill i {
-  transition: transform 1s ease-in-out;
-}
-.skill:hover i {
-  transform: rotateY(360deg);
+  color: var(--tertiary-color);
 }
 
 hr {
@@ -174,10 +168,15 @@ hr {
   cursor: default;
 }
 
-.clouds {
-  fill: var(--secondary-color);
+.skill i {
+  transition: transform 1s ease-in-out;
+}
+.skill:hover i {
+  transform: rotateY(360deg);
+  color: var(--primary-color);
 }
 
-@media (max-width: 992px) {
+.clouds {
+  fill: var(--secondary-color);
 }
 </style>
