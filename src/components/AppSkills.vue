@@ -132,6 +132,13 @@ i {
   font-size: 36px;
 }
 
+.skill i {
+  transition: transform 1s ease-in-out;
+}
+.skill:hover i {
+  transform: rotateY(360deg);
+}
+
 hr {
   border: 0;
   height: 2.5px;
