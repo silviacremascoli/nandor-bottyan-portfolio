@@ -10,11 +10,10 @@
 
 <script lang="ts">
 export default {
-  name: "AppScrollTopButton",
   data() {
     return {
-      display: false,
-      scrollPosition: 0,
+      display: false as boolean,
+      scrollPosition: 0 as number,
     };
   },
   mounted() {
