@@ -5,7 +5,7 @@
     <h2>
       <span>{{ typingValue }}</span>
       <span class="blinking-cursor">|</span>
-      <span :class="{ typing: typeStatus }">&nbsp;</span>
+      <span :class="{ typing: typingStatus }">&nbsp;</span>
     </h2>
     <AppClouds />
   </header>
@@ -25,16 +25,16 @@ export default defineComponent({
   data() {
     return {
       typingValue: "" as string,
-      typeStatus: false as boolean,
+      typingStatus: false as boolean,
       displayRoleArray: [
         "BlockChain Architect",
         "IoT Solution Architect",
         "Supply Chain Manager",
         "Digital Transformation Expert",
         "Sustainability Enthusiast",
-      ],
+      ] as string[],
       typingSpeed: 100 as number,
-      erasingSpeed: 100 as number,
+      deletingSpeed: 100 as number,
       newTextDelay: 2000 as number,
       displayRoleArrayIndex: 0 as number,
       charIndex: 0 as number,
@@ -44,32 +44,33 @@ export default defineComponent({
     setTimeout(this.typeText, this.newTextDelay + 200);
   },
   methods: {
+    // The typeText function types out characters one by one until the entire string is displayed, and then it triggers the eraseText function to erase characters one by one until the display role is cleared. It then moves to the next display role and repeats the process in a loop
     typeText(): any {
       if (
         this.charIndex <
         this.displayRoleArray[this.displayRoleArrayIndex].length
       ) {
-        if (!this.typeStatus) this.typeStatus = true;
+        if (!this.typingStatus) this.typingStatus = true;
         this.typingValue += this.displayRoleArray[
           this.displayRoleArrayIndex
         ].charAt(this.charIndex);
         this.charIndex += 1;
         setTimeout(this.typeText, this.typingSpeed);
       } else {
-        this.typeStatus = false;
-        setTimeout(this.eraseText, this.newTextDelay);
+        this.typingStatus = false;
+        setTimeout(this.deleteText, this.newTextDelay);
       }
     },
-    eraseText(): any {
+    deleteText(): any {
       if (this.charIndex > 0) {
-        if (!this.typeStatus) this.typeStatus = true;
+        if (!this.typingStatus) this.typingStatus = true;
         this.typingValue = this.displayRoleArray[
           this.displayRoleArrayIndex
         ].substring(0, this.charIndex - 1);
         this.charIndex -= 1;
-        setTimeout(this.eraseText, this.erasingSpeed);
+        setTimeout(this.deleteText, this.deletingSpeed);
       } else {
-        this.typeStatus = false;
+        this.typingStatus = false;
         this.displayRoleArrayIndex += 1;
         if (this.displayRoleArrayIndex >= this.displayRoleArray.length)
           this.displayRoleArrayIndex = 0;
@@ -108,29 +109,6 @@ h2 {
     color: var(--tertiary-color);
   }
 }
-
-/* .text:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: none;
-  border-left: 2px solid var(--tertiary-color);
-  animation: animate 4s steps(12) infinite;
-}
-
-@keyframes animate {
-  40%,
-  60% {
-    left: 100%;
-  }
-
-  100% {
-    left: 0%;
-  }
-} */
 .clouds {
   fill: var(--tertiary-color);
 }
