@@ -9,7 +9,9 @@
 </template>
 
 <script lang="ts">
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
   data() {
     return {
       display: false as boolean,
@@ -23,19 +25,17 @@ export default {
     window.removeEventListener("scroll", this.detectScroll);
   },
   methods: {
-    scrollToTop(event: Event): any {
+    scrollToTop(event: Event) {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
-    detectScroll(event: Event): any {
+    detectScroll(event: Event) {
       this.scrollPosition = window.scrollY;
       if (this.scrollPosition > 500) {
         this.display = true;
-      } else {
-        this.display = false;
       }
     },
   },
-};
+});
 </script>
 
 <style scoped>
