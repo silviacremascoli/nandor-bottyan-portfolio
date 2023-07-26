@@ -7,7 +7,12 @@
     </p>
     <hr />
     <div class="row contact-options">
-      <div class="col-lg-4 contact-option">
+      <div
+        class="col-lg-4 contact-option"
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in"
+      >
         <div class="d-flex flex-column justify-content-center">
           <i class="fa-solid fa-envelope mb-3"></i>
           <p>Email me:</p>
@@ -16,14 +21,24 @@
           >
         </div>
       </div>
-      <div class="col-lg-4 contact-option">
+      <div
+        class="col-lg-4 contact-option"
+        data-aos="zoom-in"
+        data-aos-duration="3000"
+        data-aos-easing="ease-in"
+      >
         <div class="d-flex flex-column justify-content-center">
           <i class="fa-solid fa-phone mb-3"></i>
           <p>Call me:</p>
           <p class="fw-semibold">+436704078150</p>
         </div>
       </div>
-      <div class="col-lg-4 contact-option">
+      <div
+        class="col-lg-4 contact-option"
+        data-aos="zoom-in"
+        data-aos-duration="3500"
+        data-aos-easing="ease-in"
+      >
         <div class="d-flex flex-column justify-content-center">
           <i class="fa-brands fa-linkedin mb-3"></i>
           <p>Find me on LinkedIn:</p>
@@ -37,7 +52,12 @@
       </div>
     </div>
     <div class="row form">
-      <div class="col-lg-12 mt-4 contact-form">
+      <div
+        class="col-lg-12 mt-4 contact-form"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in"
+      >
         <h3 class="mb-5 text-center">Or write me a message here:</h3>
         <form method="POST" name="contact" netlify>
           <div class="row g-3">
@@ -87,11 +107,15 @@
 </template>
 <script lang="ts">
 import AppClouds from "./AppClouds.vue";
+import AOS from "aos";
 
 export default {
   name: "AppContact",
   components: {
     AppClouds,
+  },
+  mounted() {
+    AOS.init();
   },
   methods: {
     sent: function (event: MouseEvent) {

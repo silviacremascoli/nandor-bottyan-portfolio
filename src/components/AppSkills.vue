@@ -10,7 +10,12 @@
     <div class="container">
       <div class="row pb-5">
         <div class="col-lg-4">
-          <div class="skill">
+          <div
+            class="skill"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in"
+          >
             <i class="fa-solid fa-link mb-3"></i>
             <h3 class="mb-4">Digital Transformation</h3>
             <p>
@@ -24,7 +29,12 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="skill">
+          <div
+            class="skill"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in"
+          >
             <i class="fa-brands fa-aws mb-3"></i>
             <h3 class="mb-4">Amazon Web Services</h3>
             <p>
@@ -38,7 +48,12 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="skill">
+          <div
+            class="skill"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in"
+          >
             <i class="fa-brands fa-windows mb-3"></i>
             <h3 class="mb-4">Microsoft Azure</h3>
             <p>
@@ -52,7 +67,12 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="skill">
+          <div
+            class="skill"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in"
+          >
             <i class="fa-brands fa-google mb-3"></i>
             <h3 class="mb-4">Google Cloud</h3>
             <p>
@@ -66,7 +86,12 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="skill">
+          <div
+            class="skill"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in"
+          >
             <i class="fa-solid fa-wifi mb-3"></i>
             <h3 class="mb-4">Industrial IoT Solutions</h3>
             <p>
@@ -80,7 +105,12 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="skill">
+          <div
+            class="skill"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in"
+          >
             <i class="fa-solid fa-truck-field mb-3"></i>
             <h3 class="mb-4">Supply Management</h3>
             <p>
@@ -100,11 +130,15 @@
 </template>
 <script lang="ts">
 import AppClouds from "./AppClouds.vue";
+import AOS from "aos";
 
 export default {
   name: "AppSkills",
   components: {
     AppClouds,
+  },
+  mounted() {
+    AOS.init();
   },
 };
 </script>

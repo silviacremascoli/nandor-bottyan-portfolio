@@ -4,6 +4,9 @@
       <div class="row">
         <div
           class="col-lg-6 description d-flex flex-column justify-center animate__animated animate__fadeInLeft"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in"
         >
           <h2 class="mb-3">Who am I?</h2>
           <p>
@@ -20,7 +23,12 @@
             Integer condimentum tortor a nibh porta malesuada.
           </p>
         </div>
-        <div class="col-lg-6 cloud-video">
+        <div
+          class="col-lg-6 cloud-video"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in"
+        >
           <video
             src="./media/industry_4.0.mp4"
             width="600"
@@ -53,11 +61,15 @@
 </template>
 <script lang="ts">
 import AppClouds from "./AppClouds.vue";
+import AOS from "aos";
 
 export default {
   name: "AppSkills",
   components: {
     AppClouds,
+  },
+  mounted() {
+    AOS.init();
   },
 };
 </script>

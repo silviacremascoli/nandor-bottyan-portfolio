@@ -6,7 +6,12 @@
       Donec nec urna orci. Aenean accumsan aliquam lobortis.
     </p>
     <hr class="center-diamond" />
-    <div class="container-projects">
+    <div
+      class="container-projects"
+      data-aos="zoom-in"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in"
+    >
       <div
         id="carouselExampleCaptions"
         class="carousel slide carousel-fade"
@@ -93,11 +98,15 @@
 </template>
 <script lang="ts">
 import AppClouds from "./AppClouds.vue";
+import AOS from "aos";
 
 export default {
   name: "AppProjects",
   components: {
     AppClouds,
+  },
+  mounted() {
+    AOS.init();
   },
 };
 </script>
