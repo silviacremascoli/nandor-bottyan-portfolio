@@ -1,6 +1,6 @@
 <template>
-  <section class="projects-section">
-    <h2 id="projects" class="mb-4">My projects</h2>
+  <section class="projects-section" id="projects">
+    <h2 class="mb-4">My projects</h2>
     <p class="projects-text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
       Donec nec urna orci. Aenean accumsan aliquam lobortis.
@@ -88,59 +88,6 @@
         </button>
       </div>
     </div>
-    <!-- <div class="row">
-        <div class="col-lg-4">
-          <iframe
-            class="embed"
-            src="https://www.youtube.com/embed/zSWdZVtXT7E"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <h3 class="mt-3">Project</h3>
-          <p class="p-3 pt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
-            porta arcu. Pellentesque sem erat, blandit id mauris non, lacinia
-            efficitur lectus. Ut ex tortor, pretium ac iaculis et, sagittis nec
-            felis. Donec nec urna orci. Aenean accumsan aliquam lobortis.
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <iframe
-            class="embed"
-            src="https://www.youtube.com/embed/r5X-hFf6Bwo"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <h3 class="mt-3">Project</h3>
-          <p class="p-3 pt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
-            porta arcu. Pellentesque sem erat, blandit id mauris non, lacinia
-            efficitur lectus. Ut ex tortor, pretium ac iaculis et, sagittis nec
-            felis. Donec nec urna orci. Aenean accumsan aliquam lobortis.
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <iframe
-            class="embed"
-            src="https://www.youtube.com/embed/vtxVK3sbZ0o"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <h3 class="mt-3">Project</h3>
-          <p class="p-3 pt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
-            porta arcu. Pellentesque sem erat, blandit id mauris non, lacinia
-            efficitur lectus. Ut ex tortor, pretium ac iaculis et, sagittis nec
-            felis. Donec nec urna orci. Aenean accumsan aliquam lobortis.
-          </p>
-        </div>
-      </div> -->
     <AppClouds />
   </section>
 </template>

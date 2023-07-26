@@ -2,19 +2,19 @@
   <footer>
     <div class="social-links pb-4 d-flex justify-content-center">
       <a
-        href="https://www.linkedin.com/in/silvia-cremascoli/"
+        href="https://www.linkedin.com/in/nandor-bottyan/"
         target="_blank"
-        title="LinkedIn Silvia Cremascoli"
+        title="LinkedIn Nandor Bottyan"
         ><i class="fa-brands fa-linkedin"></i
       ></a>
       <a
-        href="https://github.com/silviacremascoli"
+        href="https://github.com/NandorBottyanBocan"
         target="_blank"
-        title="GitHub Silvia Cremascoli"
+        title="GitHub Nandor Bottyan"
         ><i class="fa-brands fa-github"></i
       ></a>
       <a
-        href="https://drive.google.com/file/d/1-nZm2vqTzP2DF2JLJHuSTcbyV-6yny3t/view?usp=share_link"
+        href="https://youtube.com"
         target="_blank"
         title="Youtube Nandor Bottyan"
         ><i class="fa-brands fa-youtube"></i
@@ -22,7 +22,7 @@
       <a
         href="https://drive.google.com/file/d/1lcpjhCugvGs7G4qIBis6Uv1gtVaqoWjo/view?usp=drive_link"
         target="_blank"
-        title="Resume Silvia Cremascoli"
+        title="Resume Nandor Bottyan"
         ><i class="fa-solid fa-file"></i
       ></a>
     </div>

@@ -1,6 +1,6 @@
 <template>
-  <section class="about-section">
-    <div class="container" id="about-me">
+  <section class="about-section" id="about-me">
+    <div class="container">
       <div class="row">
         <div
           class="col-lg-6 description d-flex flex-column justify-center animate__animated animate__fadeInLeft"

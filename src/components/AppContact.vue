@@ -1,6 +1,6 @@
 <template>
-  <section class="contact-section">
-    <h2 id="contact" class="mt-4">Contact me</h2>
+  <section class="contact-section" id="contact">
+    <h2 class="mt-4">Contact me</h2>
     <p class="contact-text">
       If you would like to collaborate with me or you simply want to chat,<br />
       I'm looking forward to our encounter!

@@ -96,7 +96,7 @@ const particlesLoaded = async (container) => {
 };
 </script>
 <style>
-/* #particles-js canvas {
+#particles-js canvas {
   display: block;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -104,7 +104,7 @@ const particlesLoaded = async (container) => {
   opacity: 1;
   -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
   transition: opacity 0.8s ease, transform 1.4s ease;
-} */
+}
 
 #particles-js {
   width: 100%;

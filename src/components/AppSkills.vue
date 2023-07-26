@@ -1,6 +1,6 @@
 <template>
-  <section class="skills-section">
-    <h2 class="mb-4" id="skills">Expertise</h2>
+  <section class="skills-section" id="skills">
+    <h2 class="mb-4">Expertise</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet sem
       leo.<br />
