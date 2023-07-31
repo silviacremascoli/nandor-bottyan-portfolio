@@ -3,7 +3,7 @@
   <header class="header">
     <h1 class="my-name">Nándor Bottyán</h1>
     <h2>
-      <span>{{ typingValue }}</span>
+      <span class="my-role">{{ typingValue }}</span>
       <span class="blinking-cursor">|</span>
       <span :class="{ typing: typingStatus }">&nbsp;</span>
     </h2>
@@ -96,6 +96,17 @@ h2 {
 
 .my-name {
   background-image: linear-gradient(to right, #ff4a57 0%, #1f2235 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-size: 100%;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.my-role {
+  background-image: linear-gradient(to right, #1f2235 0%, #ff4a57 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;

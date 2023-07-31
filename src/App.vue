@@ -46,6 +46,12 @@ export default {
   --main-font: "Poppins", sans-serif;
   --heading-font: "Tektur", cursive;
 }
+
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 body {
   font-family: var(--main-font);
   background: var(--primary-color);
@@ -55,8 +61,7 @@ body {
   color: white;
   max-width: 100%;
   max-height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: auto;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 </style>

@@ -12,7 +12,7 @@
         <div class="col-lg-4">
           <div
             class="skill"
-            data-aos="fade-right"
+            data-aos="fade-in"
             data-aos-duration="2000"
             data-aos-easing="ease-in"
           >
@@ -50,7 +50,7 @@
         <div class="col-lg-4">
           <div
             class="skill"
-            data-aos="fade-left"
+            data-aos="fade-in"
             data-aos-duration="2000"
             data-aos-easing="ease-in"
           >
@@ -69,7 +69,7 @@
         <div class="col-lg-4">
           <div
             class="skill"
-            data-aos="fade-right"
+            data-aos="fade-in"
             data-aos-duration="2000"
             data-aos-easing="ease-in"
           >
@@ -107,7 +107,7 @@
         <div class="col-lg-4">
           <div
             class="skill"
-            data-aos="fade-left"
+            data-aos="fade-in"
             data-aos-duration="2000"
             data-aos-easing="ease-in"
           >
