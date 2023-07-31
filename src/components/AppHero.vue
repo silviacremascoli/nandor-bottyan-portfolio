@@ -81,6 +81,9 @@ export default defineComponent({
 });
 </script>
 <style scoped>
+.header {
+  max-width: 100%;
+}
 h1 {
   margin-top: 80px;
   margin-bottom: 10px;

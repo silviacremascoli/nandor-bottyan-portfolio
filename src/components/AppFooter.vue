@@ -41,6 +41,7 @@ footer {
   padding: 25px 0;
   letter-spacing: 1px;
   font-weight: 500;
+  max-width: 100%;
 }
 
 footer a {

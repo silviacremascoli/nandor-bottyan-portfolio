@@ -107,8 +107,8 @@ const particlesLoaded = async (container) => {
 }
 
 #particles-js {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   position: absolute;
   z-index: -10;
   top: 0;

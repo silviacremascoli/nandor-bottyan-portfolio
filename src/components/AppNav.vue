@@ -31,6 +31,7 @@
 <style scoped>
 nav {
   background: var(--secondary-color);
+  max-width: 100%;
 }
 .navbar {
   padding: 5px 50px;
