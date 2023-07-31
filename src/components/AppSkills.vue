@@ -12,8 +12,8 @@
         <div class="col-lg-4">
           <div
             class="skill"
-            data-aos="fade-in"
-            data-aos-duration="2000"
+            data-aos="fade-right"
+            data-aos-duration="1500"
             data-aos-easing="ease-in"
           >
             <i class="fa-solid fa-link mb-3"></i>
@@ -50,8 +50,8 @@
         <div class="col-lg-4">
           <div
             class="skill"
-            data-aos="fade-in"
-            data-aos-duration="2000"
+            data-aos="fade-left"
+            data-aos-duration="1500"
             data-aos-easing="ease-in"
           >
             <i class="fa-brands fa-windows mb-3"></i>
@@ -69,8 +69,8 @@
         <div class="col-lg-4">
           <div
             class="skill"
-            data-aos="fade-in"
-            data-aos-duration="2000"
+            data-aos="fade-right"
+            data-aos-duration="1500"
             data-aos-easing="ease-in"
           >
             <i class="fa-brands fa-google mb-3"></i>
@@ -89,7 +89,7 @@
           <div
             class="skill"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1500"
             data-aos-easing="ease-in"
           >
             <i class="fa-solid fa-wifi mb-3"></i>
@@ -107,8 +107,8 @@
         <div class="col-lg-4">
           <div
             class="skill"
-            data-aos="fade-in"
-            data-aos-duration="2000"
+            data-aos="fade-left"
+            data-aos-duration="1500"
             data-aos-easing="ease-in"
           >
             <i class="fa-solid fa-truck-field mb-3"></i>
@@ -203,7 +203,7 @@ hr {
 }
 
 .skill i {
-  transition: transform 1s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 .skill:hover i {
   transform: rotateY(360deg);
