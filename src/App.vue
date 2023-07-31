@@ -47,21 +47,14 @@ export default {
   --heading-font: "Tektur", cursive;
 }
 
-html {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
 body {
   font-family: var(--main-font);
   background: var(--primary-color);
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
   max-width: 100%;
   max-height: 100%;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 </style>
