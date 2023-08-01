@@ -1,4 +1,4 @@
-# my-project
+# nandor-bottyan-portfolio
 
 ## Project setup
 ```
