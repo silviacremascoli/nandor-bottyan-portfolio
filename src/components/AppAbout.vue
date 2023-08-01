@@ -230,6 +230,19 @@ video {
     padding: 30px 0 40px 0;
     max-width: 500px;
   }
+  .floating-cloud-1 {
+    top: 3610px;
+    animation-duration: 20s;
+  }
+  .floating-cloud-2 {
+    top: 3220px;
+    animation-duration: 20s;
+  }
+  .floating-cloud-3 {
+    top: 4010px;
+    max-width: 50px;
+    animation-duration: 20s;
+  }
 }
 
 @media (max-width: 576px) {
