@@ -47,6 +47,10 @@ export default {
   --heading-font: "Tektur", cursive;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--main-font);
   background: var(--primary-color);
@@ -56,5 +60,8 @@ body {
   color: white;
   max-width: 100%;
   max-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 </style>

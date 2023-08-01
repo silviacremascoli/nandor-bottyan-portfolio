@@ -137,4 +137,16 @@ h2 {
 .clouds {
   fill: var(--tertiary-color);
 }
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .blinking-cursor {
+    font-size: 42px;
+  }
+}
 </style>
