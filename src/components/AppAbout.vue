@@ -232,16 +232,19 @@ video {
   }
   .floating-cloud-1 {
     top: 3610px;
+    max-width: 50px;
     animation-duration: 20s;
+    animation-delay: 4s;
   }
   .floating-cloud-2 {
     top: 3220px;
     animation-duration: 20s;
+    animation-delay: 2s;
   }
   .floating-cloud-3 {
     top: 4010px;
-    max-width: 50px;
     animation-duration: 20s;
+    animation-delay: 6s;
   }
 }
 
