@@ -51,9 +51,8 @@ export default {
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: var(--main-font);
-  background: var(--primary-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
