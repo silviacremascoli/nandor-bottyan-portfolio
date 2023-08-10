@@ -41,17 +41,17 @@
       <div class="floating-clouds">
         <img
           src="./media/floating_cloud.png"
-          class="floating-cloud-1"
+          class="floating-cloud-1 animation"
           alt="floating cloud"
         />
         <img
           src="./media/floating_cloud.png"
-          class="floating-cloud-2"
+          class="floating-cloud-2 animation"
           alt="floating cloud"
         />
         <img
           src="./media/floating_cloud.png"
-          class="floating-cloud-3"
+          class="floating-cloud-3 animation"
           alt="floating cloud"
         />
       </div>
@@ -78,6 +78,7 @@ export default {
   background: var(--secondary-color);
   max-width: 100%;
 }
+
 h2 {
   font-size: 48px;
   font-weight: 700;
@@ -93,36 +94,24 @@ video {
   padding-top: 40px;
 }
 
+.animation {
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  opacity: 0;
+}
+
 .floating-cloud-1 {
   top: 2000px;
   max-width: 70px;
   -webkit-animation: cloud-1 35s linear 6s infinite;
   animation: cloud-1 35s linear 6s infinite;
-  animation-duration: 35s;
-  animation-timing-function: linear;
-  animation-delay: 6s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: cloud-1;
-  opacity: 0;
 }
-
 .floating-cloud-2 {
   top: 1800px;
   max-width: 50px;
   -webkit-animation: cloud-2 25s linear 4s infinite;
   animation: cloud-2 25s linear 6s infinite;
-  animation-duration: 25s;
-  animation-timing-function: linear;
-  animation-delay: 6s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: cloud-2;
-  opacity: 0;
 }
 
 .floating-cloud-3 {
@@ -130,15 +119,6 @@ video {
   max-width: 60px;
   -webkit-animation: cloud-3 30s linear 8s infinite;
   animation: cloud-3 30s linear 6s infinite;
-  animation-duration: 30s;
-  animation-timing-function: linear;
-  animation-delay: 6s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: cloud-3;
-  opacity: 0;
 }
 .floating-clouds img {
   position: absolute;
