@@ -65,9 +65,7 @@ footer a:hover {
   padding: 10px 16px;
   font-size: 18px;
   border-radius: 50%;
-  border: 0.5px solid var(--primary-color);
-  transition: all 300ms ease-in-out;
-  transition: transform 0.5s;
+  transition: all 500ms ease-in-out;
 }
 
 .social-links a:hover {

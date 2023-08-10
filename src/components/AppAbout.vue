@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div
-          class="col-lg-6 description d-flex flex-column justify-center animate__animated animate__fadeInLeft"
+          class="col-lg-6 description d-flex flex-column justify-center"
           data-aos="fade-right"
           data-aos-duration="2000"
           data-aos-easing="ease-in"

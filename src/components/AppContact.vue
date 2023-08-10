@@ -59,7 +59,7 @@
         data-aos-easing="ease-in"
       >
         <h3 class="mb-5 text-center">Or write me a message here:</h3>
-        <form method="POST" name="contact" netlify>
+        <form name="contact">
           <div class="row g-3">
             <div class="col-lg">
               <input
@@ -118,6 +118,7 @@ export default {
     AOS.init();
   },
   methods: {
+    // eslint-disable-next-line no-unused-vars
     sent: function (event: MouseEvent) {
       alert("Thank you! I'll answer you as soon as possible!");
     },
@@ -190,7 +191,6 @@ h3 {
 .contact-form {
   margin: 0 auto;
   padding: 0 200px;
-  color: var(--quaternary-color);
 }
 
 .contact-form input,
@@ -220,16 +220,15 @@ h3 {
   color: white;
   border-radius: 12px;
   padding: 10px 20px;
-  transition: all 300ms ease-in-out;
-  transition: transform 0.5s;
+  transition: all 500ms ease-in-out;
 }
 
 .btn-main:hover {
   background: var(--tertiary-color);
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
-  transform: scale(1.1);
   font-weight: 600;
+  transform: scale(1.1);
 }
 
 .clouds {
