@@ -100,8 +100,8 @@ h2 {
 .my-name {
   background-image: linear-gradient(to right, #ff4a57 0%, #1f2235 100%);
   background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  /* -webkit-background-clip: text;
+  -moz-background-clip: text; */
   background-size: 100%;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
@@ -111,8 +111,8 @@ h2 {
 .my-role {
   background-image: linear-gradient(to right, #1f2235 0%, #ff4a57 100%);
   background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  /* -webkit-background-clip: text;
+  -moz-background-clip: text; */
   background-size: 100%;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;

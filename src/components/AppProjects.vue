@@ -23,7 +23,6 @@
               class="embed d-block w-100"
               src="https://www.youtube.com/embed/zSWdZVtXT7E"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
@@ -41,7 +40,6 @@
               class="embed d-block w-100"
               src="https://www.youtube.com/embed/r5X-hFf6Bwo"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
@@ -59,7 +57,6 @@
               class="embed d-block w-100"
               src="https://www.youtube.com/embed/vtxVK3sbZ0o"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
@@ -124,7 +121,7 @@ h2 {
 
 hr {
   border: 0;
-  height: 2.5px;
+  height: 3px;
   width: 10%;
   position: relative;
   margin: 30px auto;

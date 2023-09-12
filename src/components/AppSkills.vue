@@ -169,7 +169,7 @@ i {
 
 hr {
   border: 0;
-  height: 2.5px;
+  height: 3px;
   width: 10%;
   position: relative;
   margin: 30px auto;
@@ -189,7 +189,7 @@ hr {
   justify-content: center;
   background: var(--primary-color);
   border-radius: 12px;
-  border: 0.5px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   padding: 40px;
   margin-top: 10px;
   transition: all 400ms ease-in;

@@ -59,7 +59,7 @@
         data-aos-easing="ease-in"
       >
         <h3 class="mb-5 text-center">Or write me a message here:</h3>
-        <form name="contact">
+        <form method="POST" name="contact" netlify>
           <div class="row g-3">
             <div class="col-lg">
               <input
@@ -139,7 +139,7 @@ h2 {
 
 hr {
   border: 0;
-  height: 2.5px;
+  height: 3px;
   width: 10%;
   position: relative;
   margin: 30px auto;
@@ -168,7 +168,7 @@ hr {
 }
 
 .contact-option p {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-size: 18px;
 }
 
