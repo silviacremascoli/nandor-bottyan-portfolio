@@ -13,6 +13,7 @@
     "tsparticles": "^2.10.1",
     "vue": "^3.2.13",
     "vue-class-component": "^8.0.0-0",
+    "vue-router": "^4.2.5",
     "vue3-particles": "^2.10.1"
   },
   "devDependencies": {

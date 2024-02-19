@@ -142,75 +142,74 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .skills-section {
   background: var(--tertiary-color);
   color: white;
   max-width: 100%;
   padding: 40px 0 0 0;
-}
 
-h2 {
-  font-size: 48px;
-  font-weight: 700;
-  font-family: var(--heading-font);
-}
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+  }
 
-h3 {
-  font-size: 24px;
-  font-weight: 700;
-  font-family: var(--heading-font);
-}
+  hr {
+    border: 0;
+    height: 3px;
+    width: 10%;
+    position: relative;
+    margin: 30px auto;
+    background: var(--primary-color);
+  }
 
-i {
-  font-size: 36px;
-  color: var(--tertiary-color);
-}
+  .container {
+    margin: 0 auto;
 
-hr {
-  border: 0;
-  height: 3px;
-  width: 10%;
-  position: relative;
-  margin: 30px auto;
-  background: var(--primary-color);
-}
+    .col-lg-4 {
+      margin-bottom: 15px;
 
-.container {
-  margin: 0 auto;
-}
+      .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--primary-color);
+        border-radius: 12px;
+        border: 1px solid var(--primary-color);
+        padding: 40px;
+        margin-top: 10px;
+        transition: all 400ms ease-in;
 
-.col-lg-4 {
-  margin-bottom: 15px;
-}
-.skill {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: var(--primary-color);
-  border-radius: 12px;
-  border: 1px solid var(--primary-color);
-  padding: 40px;
-  margin-top: 10px;
-  transition: all 400ms ease-in;
-}
+        &:hover {
+          background: var(--tertiary-color);
+          border: 2px solid var(--primary-color);
+          color: var(--primary-color);
+          cursor: default;
 
-.skill:hover {
-  background: var(--tertiary-color);
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  cursor: default;
-}
+          i {
+            transform: rotateY(360deg);
+            color: var(--primary-color);
+          }
+        }
 
-.skill i {
-  transition: transform 2s ease-in-out;
-}
-.skill:hover i {
-  transform: rotateY(360deg);
-  color: var(--primary-color);
-}
+        i {
+          font-size: 36px;
+          color: var(--tertiary-color);
+          transition: transform 2s ease-in-out;
+        }
 
-.clouds {
-  fill: var(--secondary-color);
+        h3 {
+          font-size: 24px;
+          font-weight: 700;
+          font-family: var(--heading-font);
+        }
+      }
+    }
+  }
+
+  .clouds {
+    fill: var(--secondary-color);
+  }
 }
 </style>
