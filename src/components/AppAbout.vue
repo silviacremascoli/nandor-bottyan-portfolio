@@ -73,16 +73,16 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .about-section {
-  background: var(--secondary-color);
+  background: $secondary-color;
   max-width: 100%;
 }
 
 h2 {
   font-size: 48px;
   font-weight: 700;
-  font-family: var(--heading-font);
+  font-family: $heading-font;
 }
 
 .description {
@@ -196,7 +196,7 @@ video {
 }
 
 .clouds {
-  fill: var(--tertiary-color);
+  fill: $tertiary-color;
   margin-bottom: 0;
 }
 

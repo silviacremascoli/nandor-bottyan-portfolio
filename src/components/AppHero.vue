@@ -80,73 +80,60 @@ export default defineComponent({
   },
 });
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .header {
   max-width: 100%;
-}
-h1 {
-  margin-top: 80px;
-  margin-bottom: 10px;
-  font-size: 88px;
-  font-family: var(--heading-font);
-}
 
-h2 {
-  font-size: 48px;
-  font-weight: 500;
-  margin-bottom: 50px;
-}
-
-.my-name {
-  background-image: linear-gradient(to right, #ff4a57 0%, #1f2235 100%);
-  background-clip: text;
-  /* -webkit-background-clip: text;
-  -moz-background-clip: text; */
-  background-size: 100%;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  -webkit-text-stroke: 1px white;
-}
-
-.my-role {
-  background-image: linear-gradient(to right, #1f2235 0%, #ff4a57 100%);
-  background-clip: text;
-  /* -webkit-background-clip: text;
-  -moz-background-clip: text; */
-  background-size: 100%;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  -webkit-text-stroke: 1px white;
-}
-
-.blinking-cursor {
-  font-size: 54px;
-  color: var(--tertiary-color);
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: var(--tertiary-color);
-  }
-}
-.clouds {
-  fill: var(--tertiary-color);
-}
-
-@media (max-width: 992px) {
   h1 {
     font-size: 72px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-family: $heading-font;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 88px;
+    }
   }
+
   h2 {
     font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 50px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 48px;
+    }
   }
+
+  .my-name {
+    @include text-gradient(linear-gradient(to right, #ff4a57 0%, #1f2235 100%));
+  }
+
+  .my-role {
+    @include text-gradient(linear-gradient(to right, #1f2235 0%, #ff4a57 100%));
+  }
+
   .blinking-cursor {
     font-size: 42px;
+    color: $tertiary-color;
+    animation: blink 1s step-end infinite;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 54px;
+    }
+  }
+
+  @keyframes blink {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: $tertiary-color;
+    }
+  }
+  .clouds {
+    fill: $tertiary-color;
   }
 }
 </style>

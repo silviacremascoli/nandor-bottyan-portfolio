@@ -125,16 +125,16 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .contact-section {
-  background: var(--secondary-color);
+  background: $secondary-color;
   max-width: 100%;
   padding: 30px 0 0 0;
 }
 h2 {
   font-size: 48px;
   font-weight: 700;
-  font-family: var(--heading-font);
+  font-family: $heading-font;
 }
 
 hr {
@@ -143,7 +143,7 @@ hr {
   width: 10%;
   position: relative;
   margin: 30px auto;
-  background: var(--tertiary-color);
+  background: $tertiary-color;
 }
 .form,
 .contact-options {
@@ -155,7 +155,7 @@ hr {
 }
 
 .contact-option {
-  background: var(--primary-color);
+  background: $primary-color;
   border-radius: 12px;
   width: 25%;
   margin: 0 30px;
@@ -163,7 +163,7 @@ hr {
 }
 
 .contact-option i {
-  color: var(--tertiary-color);
+  color: $tertiary-color;
   font-size: 36px;
 }
 
@@ -185,7 +185,7 @@ h3 {
 }
 
 .contact-option a:hover {
-  color: var(--tertiary-color);
+  color: $tertiary-color;
 }
 
 .contact-form {
@@ -195,7 +195,7 @@ h3 {
 
 .contact-form input,
 .contact-form textarea {
-  background: var(--primary-color);
+  background: $primary-color;
   border: none;
   color: white;
   padding: 20px 35px;
@@ -215,7 +215,7 @@ h3 {
 } */
 
 .btn-main {
-  background: var(--tertiary-color);
+  background: $tertiary-color;
   font-size: 18px;
   color: white;
   border-radius: 12px;
@@ -224,15 +224,15 @@ h3 {
 }
 
 .btn-main:hover {
-  background: var(--tertiary-color);
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background: $tertiary-color;
+  color: $primary-color;
+  border: 1px solid $primary-color;
   font-weight: 600;
   transform: scale(1.1);
 }
 
 .clouds {
-  fill: var(--tertiary-color);
+  fill: $tertiary-color;
   max-width: 100%;
   margin-bottom: 0;
 }

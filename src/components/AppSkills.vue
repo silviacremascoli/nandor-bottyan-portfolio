@@ -144,7 +144,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .skills-section {
-  background: var(--tertiary-color);
+  background: $tertiary-color;
   color: white;
   max-width: 100%;
   padding: 40px 0 0 0;
@@ -152,7 +152,7 @@ export default {
   h2 {
     font-size: 48px;
     font-weight: 700;
-    font-family: var(--heading-font);
+    font-family: $heading-font;
   }
 
   hr {
@@ -161,7 +161,7 @@ export default {
     width: 10%;
     position: relative;
     margin: 30px auto;
-    background: var(--primary-color);
+    background: $primary-color;
   }
 
   .container {
@@ -174,42 +174,42 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: var(--primary-color);
+        background: $primary-color;
         border-radius: 12px;
-        border: 1px solid var(--primary-color);
+        border: 1px solid $primary-color;
         padding: 40px;
         margin-top: 10px;
         transition: all 400ms ease-in;
 
         &:hover {
-          background: var(--tertiary-color);
-          border: 2px solid var(--primary-color);
-          color: var(--primary-color);
+          background: $tertiary-color;
+          border: 2px solid $primary-color;
+          color: $primary-color;
           cursor: default;
 
           i {
             transform: rotateY(360deg);
-            color: var(--primary-color);
+            color: $primary-color;
           }
         }
 
         i {
           font-size: 36px;
-          color: var(--tertiary-color);
+          color: $tertiary-color;
           transition: transform 2s ease-in-out;
         }
 
         h3 {
           font-size: 24px;
           font-weight: 700;
-          font-family: var(--heading-font);
+          font-family: $heading-font;
         }
       }
     }
   }
 
   .clouds {
-    fill: var(--secondary-color);
+    fill: $secondary-color;
   }
 }
 </style>

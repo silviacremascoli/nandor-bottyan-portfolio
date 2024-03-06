@@ -28,54 +28,57 @@
   </nav>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 nav {
-  background: var(--secondary-color);
+  background: $secondary-color;
   max-width: 100%;
-}
-.navbar {
-  padding: 5px 50px;
-}
-.nav-link {
-  color: var(--tertiary-color);
-  font-size: 18px;
-  letter-spacing: 1.5px;
-  text-align: left;
-  padding-bottom: 2px;
-  transition: all 400ms ease-in-out;
-  transition: transform 0.5s;
-}
-.nav-link:hover {
-  transform: scale(1.1);
-}
 
-.navbar-toggler {
-  background: var(--tertiary-color);
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
-}
-.logo {
-  max-width: 60px;
-}
-
-@media (max-width: 992px) {
-  .contact {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .navbar {
+  &.navbar {
     padding: 4px 20px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 5px 50px;
+    }
+  }
+  .nav-link {
+    color: $tertiary-color;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    padding-bottom: 2px;
+
+    &:hover {
+      color: $tertiary-color;
+      transition: all 400ms ease-in-out;
+
+      @include media-breakpoint-up(lg) {
+        transform: scale(1.1);
+      }
+    }
+
+    &.home-link {
+      @include media-breakpoint-down(sm) {
+        padding-top: 20px;
+      }
+    }
+
+    &.contact {
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 20px;
+      }
+    }
   }
 
-  .home-link {
-    padding-top: 20px;
+  .navbar-toggler {
+    background: $tertiary-color;
+
+    &:is(:focus, :active, :focus) {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .logo {
+    max-width: 60px;
   }
 }
 </style>

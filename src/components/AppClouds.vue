@@ -32,7 +32,7 @@
     ></path>
   </svg>
 </template>
-<style>
+<style lang="scss">
 .clouds {
   max-width: 100%;
   max-height: 100%;

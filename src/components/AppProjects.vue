@@ -107,61 +107,61 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .projects-section {
-  background: var(--tertiary-color);
+  background: $tertiary-color;
   max-width: 100%;
-  padding: 40px 0 0 0;
-}
-h2 {
-  font-size: 48px;
-  font-weight: 700;
-  font-family: var(--heading-font);
-}
+  padding: rem(40) 0 0 0;
 
-hr {
-  border: 0;
-  height: 3px;
-  width: 10%;
-  position: relative;
-  margin: 30px auto;
-  background: var(--secondary-color);
-}
-.container-projects {
-  background: var(--primary-color);
-  max-width: 1200px;
-  margin: 0 auto 50px auto;
-  padding: 30px;
-  border-radius: 12px;
-}
-.embed {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 12px;
-}
-
-.project-caption {
-  background: var(--primary-color);
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.clouds {
-  fill: var(--secondary-color);
-  max-width: 100%;
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .container-projects {
-    margin: 0 20px 40px 20px;
-    padding: 15px;
+  @include media-breakpoint-down(sm) {
+    .projects-text {
+      padding: 0 rem(40);
+    }
   }
-}
 
-@media (max-width: 576px) {
-  .projects-text {
-    padding: 0 40px;
+  h2 {
+    font-size: rem(48);
+    font-weight: 700;
+    font-family: $heading-font;
+  }
+
+  hr {
+    border: 0;
+    height: rem(3);
+    width: 10%;
+    position: relative;
+    margin: rem(30) auto;
+    background: $secondary-color;
+  }
+  .container-projects {
+    background: $primary-color;
+    max-width: rem(1200);
+    margin: 0 rem(20) rem(40) rem(20);
+    padding: rem(15);
+    border-radius: rem(12);
+
+    @include media-breakpoint-up(lg) {
+      margin: 0 auto rem(50) auto;
+      padding: rem(30);
+    }
+
+    .embed {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: rem(12);
+    }
+
+    .project-caption {
+      background: $primary-color;
+      padding: rem(15);
+      border-radius: rem(8);
+    }
+  }
+
+  .clouds {
+    fill: $secondary-color;
+    max-width: 100%;
+    margin-bottom: 0;
   }
 }
 </style>

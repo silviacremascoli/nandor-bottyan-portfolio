@@ -34,10 +34,10 @@
     </p>
   </footer>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 footer {
   color: white;
-  background: var(--tertiary-color);
+  background: $tertiary-color;
   padding: 25px 0;
   letter-spacing: 1px;
   font-weight: 500;
@@ -60,7 +60,7 @@ footer a:hover {
 
 .social-links a {
   margin: 0 15px;
-  color: var(--tertiary-color);
+  color: $tertiary-color;
   background: var(--secondary-color);
   padding: 10px 16px;
   font-size: 18px;
@@ -69,7 +69,7 @@ footer a:hover {
 }
 
 .social-links a:hover {
-  background: var(--primary-color);
+  background: $primary-color;
   transform: scale(1.2);
 }
 </style>

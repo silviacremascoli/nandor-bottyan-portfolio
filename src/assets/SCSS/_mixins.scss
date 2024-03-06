@@ -1,0 +1,13 @@
+@mixin text-gradient($gradient) {
+  background-image: $gradient;
+  background-clip: text;
+  background-size: 100%;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+@function rem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}

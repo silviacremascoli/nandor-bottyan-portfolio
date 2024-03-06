@@ -41,7 +41,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #scroll-top-button {
   position: fixed;
   right: 20px;
@@ -50,21 +50,21 @@ export default defineComponent({
   height: 50px;
   z-index: 99;
   border-radius: 50%;
-  background: var(--tertiary-color);
+  background: $tertiary-color;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 300ms ease-in-out;
   transition: transform 0.5s;
-}
 
-#scroll-top-button i {
-  color: var(--secondary-color);
-  font-size: 28px;
-}
+  &:hover {
+    transform: scale(1.2);
+  }
 
-#scroll-top-button:hover {
-  transform: scale(1.2);
+  i {
+    color: $secondary-color;
+    font-size: 28px;
+  }
 }
 </style>
