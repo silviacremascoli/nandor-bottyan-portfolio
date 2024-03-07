@@ -45,7 +45,7 @@ footer {
 }
 
 footer a {
-  color: var(--secondary-color);
+  color: $secondary-color;
   text-decoration: none;
   transition: all 200ms ease-in-out;
 }
@@ -61,7 +61,7 @@ footer a:hover {
 .social-links a {
   margin: 0 15px;
   color: $tertiary-color;
-  background: var(--secondary-color);
+  background: $secondary-color;
   padding: 10px 16px;
   font-size: 18px;
   border-radius: $round-border-radius;

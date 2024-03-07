@@ -144,13 +144,9 @@ export default {
   }
 
   hr {
-    border: 0;
-    height: rem(3);
-    width: 10%;
-    position: relative;
-    margin: rem(30) auto;
-    background: $tertiary-color;
+    @include divider($tertiary-color);
   }
+
   .form,
   .contact-options {
     padding: rem(30) rem(60);

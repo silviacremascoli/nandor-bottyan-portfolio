@@ -147,21 +147,16 @@ export default {
   background: $tertiary-color;
   color: white;
   max-width: 100%;
-  padding: 40px 0 0 0;
+  padding: rem(40) 0 0 0;
 
   h2 {
-    font-size: 48px;
-    font-weight: 700;
+    font-size: rem(48);
+    font-weight: $bold;
     font-family: $heading-font;
   }
 
   hr {
-    border: 0;
-    height: 3px;
-    width: 10%;
-    position: relative;
-    margin: 30px auto;
-    background: $primary-color;
+    @include divider($secondary-color);
   }
 
   .container {

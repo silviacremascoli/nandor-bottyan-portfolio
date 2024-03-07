@@ -126,13 +126,9 @@ export default {
   }
 
   hr {
-    border: 0;
-    height: rem(3);
-    width: 10%;
-    position: relative;
-    margin: rem(30) auto;
-    background: $secondary-color;
+    @include divider($secondary-color);
   }
+
   .container-projects {
     background: $primary-color;
     max-width: rem(1200);

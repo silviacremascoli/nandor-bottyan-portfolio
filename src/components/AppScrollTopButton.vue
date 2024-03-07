@@ -25,7 +25,7 @@ export default defineComponent({
     window.removeEventListener("scroll", this.detectScroll);
   },
   methods: {
-    // the scrollToTop function scrollback to the top of the page with a smooth effect, while the detectScroll function makes the button appear only after the user has scrolled down
+    // the scrollToTop function scrolls back to the top of the page with a smooth effect, while the detectScroll function makes the button appear only after the user has scrolled down
     scrollToTop(event: Event) {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
