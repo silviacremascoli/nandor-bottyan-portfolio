@@ -183,7 +183,7 @@ export default {
       }
 
       a {
-        color: white;
+        color: $white;
         font-size: rem(16);
         text-decoration: none;
         transition: all 300ms ease-in-out;
@@ -220,13 +220,13 @@ export default {
     textarea {
       background: $primary-color;
       border: none;
-      color: white;
+      color: $white;
       padding: rem(20) rem(35);
       font-size: rem(18);
       border-radius: $standard-border-radius;
 
       &::placeholder {
-        color: white;
+        color: $white;
         opacity: 0.7;
       }
     }
@@ -234,7 +234,7 @@ export default {
     .btn-main {
       background: $tertiary-color;
       font-size: rem(18);
-      color: white;
+      color: $white;
       border-radius: $standard-border-radius;
       padding: rem(10) rem(20);
       transition: all 500ms ease-in-out;

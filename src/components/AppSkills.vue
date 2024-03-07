@@ -145,7 +145,7 @@ export default {
 <style lang="scss" scoped>
 .skills-section {
   background: $tertiary-color;
-  color: white;
+  color: $white;
   max-width: 100%;
   padding: rem(40) 0 0 0;
 

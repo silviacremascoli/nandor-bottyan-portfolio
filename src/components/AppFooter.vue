@@ -36,40 +36,40 @@
 </template>
 <style lang="scss" scoped>
 footer {
-  color: white;
+  color: $white;
   background: $tertiary-color;
-  padding: 25px 0;
-  letter-spacing: 1px;
-  font-weight: 500;
+  padding: rem(25) 0;
+  letter-spacing: rem(1);
+  font-weight: $light-bold;
   max-width: 100%;
-}
 
-footer a {
-  color: $secondary-color;
-  text-decoration: none;
-  transition: all 200ms ease-in-out;
-}
+  a {
+    color: $secondary-color;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
 
-footer a:hover {
-  text-decoration: underline;
-}
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
-.clouds {
-  max-width: 100%;
-}
+  .clouds {
+    max-width: 100%;
+  }
 
-.social-links a {
-  margin: 0 15px;
-  color: $tertiary-color;
-  background: $secondary-color;
-  padding: 10px 16px;
-  font-size: 18px;
-  border-radius: $round-border-radius;
-  transition: all 500ms ease-in-out;
-}
+  .social-links a {
+    margin: 0 rem(15);
+    color: $tertiary-color;
+    background: $secondary-color;
+    padding: rem(10) rem(16);
+    font-size: rem(18);
+    border-radius: $round-border-radius;
+    transition: all 500ms ease-in-out;
 
-.social-links a:hover {
-  background: $primary-color;
-  transform: scale(1.2);
+    &:hover {
+      background: $primary-color;
+      transform: scale(1.2);
+    }
+  }
 }
 </style>
