@@ -129,137 +129,134 @@ export default {
 .contact-section {
   background: $secondary-color;
   max-width: 100%;
-  padding: 30px 0 0 0;
-}
-h2 {
-  font-size: 48px;
-  font-weight: 700;
-  font-family: $heading-font;
-}
+  padding: rem(30) 0 0 0;
 
-hr {
-  border: 0;
-  height: 3px;
-  width: 10%;
-  position: relative;
-  margin: 30px auto;
-  background: $tertiary-color;
-}
-.form,
-.contact-options {
-  padding: 30px 60px;
-}
+  h2 {
+    font-size: rem(48);
+    font-weight: $bold;
+    font-family: $heading-font;
+  }
 
-.contact-options {
-  justify-content: center;
-}
-
-.contact-option {
-  background: $primary-color;
-  border-radius: 12px;
-  width: 25%;
-  margin: 0 30px;
-  padding: 25px;
-}
-
-.contact-option i {
-  color: $tertiary-color;
-  font-size: 36px;
-}
-
-.contact-option p {
-  margin-bottom: 0;
-  font-size: 18px;
-}
-
-.contact-option a {
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  transition: all 300ms ease-in-out;
-}
-
-h3 {
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.contact-option a:hover {
-  color: $tertiary-color;
-}
-
-.contact-form {
-  margin: 0 auto;
-  padding: 0 200px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  background: $primary-color;
-  border: none;
-  color: white;
-  padding: 20px 35px;
-  font-size: 18px;
-  border-radius: 12px;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: white;
-  opacity: 0.7;
-}
-
-/* .contact-form input:focus,
-.contact-form textarea:focus {
-  border: 1px solid white;
-} */
-
-.btn-main {
-  background: $tertiary-color;
-  font-size: 18px;
-  color: white;
-  border-radius: 12px;
-  padding: 10px 20px;
-  transition: all 500ms ease-in-out;
-}
-
-.btn-main:hover {
-  background: $tertiary-color;
-  color: $primary-color;
-  border: 1px solid $primary-color;
-  font-weight: 600;
-  transform: scale(1.1);
-}
-
-.clouds {
-  fill: $tertiary-color;
-  max-width: 100%;
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
   .contact-text {
-    padding: 10px 40px;
+    @include media-breakpoint-down(lg) {
+      padding: rem(10) rem(40);
+    }
   }
-  .contact-option {
-    width: 75%;
-    margin-bottom: 20px;
-  }
-  .contact-form {
-    padding: 0 50px;
-  }
-}
 
-@media (max-width: 576px) {
-  .contact-option {
-    width: 100%;
-    margin-bottom: 20px;
+  hr {
+    border: 0;
+    height: rem(3);
+    width: 10%;
+    position: relative;
+    margin: rem(30) auto;
+    background: $tertiary-color;
   }
-  .contact-option a {
-    font-size: 16px;
+  .form,
+  .contact-options {
+    padding: rem(30) rem(60);
   }
+
+  .contact-options {
+    justify-content: center;
+
+    .contact-option {
+      background: $primary-color;
+      border-radius: rem(12);
+      width: 100%;
+      margin-bottom: rem(20);
+      padding: rem(25);
+
+      @include media-breakpoint-up(sm) {
+        width: 75%;
+        margin-bottom: rem(20);
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 25%;
+        margin: 0 rem(30);
+      }
+
+      i {
+        color: $tertiary-color;
+        font-size: rem(36);
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: rem(18);
+      }
+
+      a {
+        color: white;
+        font-size: rem(16);
+        text-decoration: none;
+        transition: all 300ms ease-in-out;
+
+        @include media-breakpoint-up(sm) {
+          font-size: rem(18);
+        }
+
+        &:hover {
+          color: $tertiary-color;
+        }
+      }
+    }
+  }
+
+  h3 {
+    font-size: rem(28);
+    font-weight: $semi-bold;
+  }
+
   .contact-form {
+    margin: 0 auto;
     padding: 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0 rem(50);
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 rem(200);
+    }
+
+    input,
+    textarea {
+      background: $primary-color;
+      border: none;
+      color: white;
+      padding: rem(20) rem(35);
+      font-size: rem(18);
+      border-radius: rem(12);
+
+      &::placeholder {
+        color: white;
+        opacity: 0.7;
+      }
+    }
+
+    .btn-main {
+      background: $tertiary-color;
+      font-size: rem(18);
+      color: white;
+      border-radius: rem(12);
+      padding: rem(10) rem(20);
+      transition: all 500ms ease-in-out;
+
+      &:hover {
+        background: $tertiary-color;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        font-weight: $semi-bold;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .clouds {
+    fill: $tertiary-color;
+    max-width: 100%;
+    margin-bottom: 0;
   }
 }
 </style>
