@@ -85,23 +85,23 @@ export default defineComponent({
   max-width: 100%;
 
   h1 {
-    font-size: 72px;
-    margin-top: 80px;
-    margin-bottom: 10px;
+    font-size: rem(72);
+    margin-top: rem(80);
+    margin-bottom: rem(10);
     font-family: $heading-font;
 
     @include media-breakpoint-up(lg) {
-      font-size: 88px;
+      font-size: rem(88);
     }
   }
 
   h2 {
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 50px;
+    font-size: rem(36);
+    font-weight: $light-bold;
+    margin-bottom: rem(50);
 
     @include media-breakpoint-up(lg) {
-      font-size: 48px;
+      font-size: rem(48);
     }
   }
 
@@ -114,12 +114,12 @@ export default defineComponent({
   }
 
   .blinking-cursor {
-    font-size: 42px;
+    font-size: rem(42);
     color: $tertiary-color;
     animation: blink 1s step-end infinite;
 
     @include media-breakpoint-up(lg) {
-      font-size: 54px;
+      font-size: rem(54);
     }
   }
 

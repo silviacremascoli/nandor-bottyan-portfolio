@@ -43,15 +43,17 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 #scroll-top-button {
+  $size: rem(50);
+
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 50px;
-  height: 50px;
+  right: rem(20);
+  bottom: rem(20);
+  width: $size;
+  height: $size;
   z-index: 99;
   border-radius: $round-border-radius;
   background: $tertiary-color;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 rem(10) rgba(0, 0, 0, 0.5);
   outline: none;
   border: none;
   cursor: pointer;
@@ -64,7 +66,7 @@ export default defineComponent({
 
   i {
     color: $secondary-color;
-    font-size: 28px;
+    font-size: rem(28);
   }
 }
 </style>
