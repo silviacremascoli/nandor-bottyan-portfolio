@@ -49,7 +49,7 @@ export default defineComponent({
   width: 50px;
   height: 50px;
   z-index: 99;
-  border-radius: 50%;
+  border-radius: $round-border-radius;
   background: $tertiary-color;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   outline: none;

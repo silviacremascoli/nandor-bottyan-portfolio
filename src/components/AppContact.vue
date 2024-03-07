@@ -161,7 +161,7 @@ export default {
 
     .contact-option {
       background: $primary-color;
-      border-radius: rem(12);
+      border-radius: $standard-border-radius;
       width: 100%;
       margin-bottom: rem(20);
       padding: rem(25);
@@ -227,7 +227,7 @@ export default {
       color: white;
       padding: rem(20) rem(35);
       font-size: rem(18);
-      border-radius: rem(12);
+      border-radius: $standard-border-radius;
 
       &::placeholder {
         color: white;
@@ -239,7 +239,7 @@ export default {
       background: $tertiary-color;
       font-size: rem(18);
       color: white;
-      border-radius: rem(12);
+      border-radius: $standard-border-radius;
       padding: rem(10) rem(20);
       transition: all 500ms ease-in-out;
 

@@ -64,7 +64,7 @@ footer a:hover {
   background: var(--secondary-color);
   padding: 10px 16px;
   font-size: 18px;
-  border-radius: 50%;
+  border-radius: $round-border-radius;
   transition: all 500ms ease-in-out;
 }
 

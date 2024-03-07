@@ -16,6 +16,10 @@ $heading-font: "Tektur", cursive;
 $bold: 700;
 $semi-bold: 600;
 
+//borders
+$standard-border-radius: rem(12);
+$round-border-radius: 50%;
+
 * {
   box-sizing: border-box;
 }

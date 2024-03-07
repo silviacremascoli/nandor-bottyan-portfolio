@@ -138,7 +138,7 @@ export default {
     max-width: rem(1200);
     margin: 0 rem(20) rem(40) rem(20);
     padding: rem(15);
-    border-radius: rem(12);
+    border-radius: $standard-border-radius;
 
     @include media-breakpoint-up(lg) {
       margin: 0 auto rem(50) auto;
@@ -148,7 +148,7 @@ export default {
     .embed {
       width: 100%;
       aspect-ratio: 16 / 9;
-      border-radius: rem(12);
+      border-radius: $standard-border-radius;
     }
 
     .project-caption {

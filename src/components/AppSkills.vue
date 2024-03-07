@@ -175,7 +175,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         background: $primary-color;
-        border-radius: 12px;
+        border-radius: $standard-border-radius;
         border: 1px solid $primary-color;
         padding: 40px;
         margin-top: 10px;
