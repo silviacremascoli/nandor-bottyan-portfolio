@@ -79,8 +79,17 @@ export default {
   max-width: 100%;
 
   .description {
-    padding: rem(60) rem(60) rem(40) rem(60);
-    text-align: justify;
+    padding: rem(40) rem(40) rem(20) rem(40);
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      padding: rem(60) 0 rem(30) 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: rem(60) rem(60) rem(40) rem(60);
+      text-align: justify;
+    }
 
     h2 {
       font-size: rem(48);
@@ -90,7 +99,17 @@ export default {
   }
 
   video {
-    padding-top: rem(40);
+    max-width: rem(300);
+    padding: 0 0 rem(20) 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: rem(30) 0 rem(40) 0;
+      max-width: rem(500);
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-top: rem(40);
+    }
   }
 
   .floating-clouds {
@@ -101,23 +120,43 @@ export default {
       opacity: 0;
 
       &.floating-cloud-1 {
-        top: rem(2000);
-        max-width: rem(70);
-        -webkit-animation: cloud-1 35s linear 6s infinite;
-        animation: cloud-1 35s linear 6s infinite;
-      }
-      &.floating-cloud-2 {
-        top: rem(1800);
+        top: rem(3610);
         max-width: rem(50);
-        -webkit-animation: cloud-2 25s linear 4s infinite;
-        animation: cloud-2 25s linear 6s infinite;
+        animation-duration: 20s;
+        animation-delay: 4s;
+
+        @include media-breakpoint-up(lg) {
+          top: rem(2000);
+          max-width: rem(70);
+          -webkit-animation: cloud-1 35s linear 6s infinite;
+          animation: cloud-1 35s linear 6s infinite;
+        }
+      }
+
+      &.floating-cloud-2 {
+        top: rem(3220);
+        animation-duration: 20s;
+        animation-delay: 2s;
+
+        @include media-breakpoint-up(lg) {
+          top: rem(1800);
+          max-width: rem(50);
+          -webkit-animation: cloud-2 25s linear 4s infinite;
+          animation: cloud-2 25s linear 6s infinite;
+        }
       }
 
       &.floating-cloud-3 {
-        top: rem(2150);
-        max-width: rem(60);
-        -webkit-animation: cloud-3 30s linear 8s infinite;
-        animation: cloud-3 30s linear 6s infinite;
+        top: rem(4010);
+        animation-duration: 20s;
+        animation-delay: 6s;
+
+        @include media-breakpoint-up(lg) {
+          top: rem(2150);
+          max-width: rem(60);
+          -webkit-animation: cloud-3 30s linear 8s infinite;
+          animation: cloud-3 30s linear 6s infinite;
+        }
       }
     }
 
@@ -136,17 +175,17 @@ export default {
       10% {
         opacity: 0.3;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        right: 200px;
+        right: rem(200);
       }
       90% {
         opacity: 0.3;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        right: 1100px;
+        right: rem(1100);
       }
       100% {
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        right: 1200px;
+        right: rem(1200);
       }
     }
 
@@ -159,17 +198,17 @@ export default {
       10% {
         opacity: 0.4;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        right: 200px;
+        right: rem(200);
       }
       90% {
         opacity: 0.4;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        right: 1100px;
+        right: rem(1100);
       }
       100% {
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        right: 1200px;
+        right: rem(1200);
       }
     }
 
@@ -182,17 +221,17 @@ export default {
       10% {
         opacity: 0.2;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        right: 200px;
+        right: rem(200);
       }
       90% {
         opacity: 0.2;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        right: 1100px;
+        right: rem(1100);
       }
       100% {
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        right: 1200px;
+        right: rem(1200);
       }
     }
   }
@@ -200,45 +239,6 @@ export default {
   .clouds {
     fill: $tertiary-color;
     margin-bottom: 0;
-  }
-}
-
-@media (max-width: 992px) {
-  .description {
-    padding: 60px 0 30px 0;
-    text-align: center;
-  }
-
-  video {
-    padding: 30px 0 40px 0;
-    max-width: 500px;
-  }
-  .floating-cloud-1 {
-    top: 3610px;
-    max-width: 50px;
-    animation-duration: 20s;
-    animation-delay: 4s;
-  }
-  .floating-cloud-2 {
-    top: 3220px;
-    animation-duration: 20s;
-    animation-delay: 2s;
-  }
-  .floating-cloud-3 {
-    top: 4010px;
-    animation-duration: 20s;
-    animation-delay: 6s;
-  }
-}
-
-@media (max-width: 576px) {
-  video {
-    max-width: 300px;
-    padding: 0 0 20px 0;
-  }
-
-  .description {
-    padding: 40px 40px 20px 40px;
   }
 }
 </style>
