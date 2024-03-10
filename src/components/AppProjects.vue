@@ -120,7 +120,7 @@ export default {
   }
 
   h2 {
-    font-size: rem(48);
+    font-size: $h2-font-size;
     font-weight: $bold;
     font-family: $heading-font;
   }

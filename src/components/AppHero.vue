@@ -101,7 +101,7 @@ export default defineComponent({
     margin-bottom: rem(50);
 
     @include media-breakpoint-up(lg) {
-      font-size: rem(48);
+      font-size: $h2-font-size;
     }
   }
 
