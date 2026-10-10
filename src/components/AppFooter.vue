@@ -23,7 +23,7 @@
         ><i class="fa-solid fa-file"></i
       ></a>
     </div>
-    <p>
+    <p class="px-1">
       This website was coded by
       <a href="https://silviacremascoli.com" target="_blank"
         >Silvia Cremascoli</a
