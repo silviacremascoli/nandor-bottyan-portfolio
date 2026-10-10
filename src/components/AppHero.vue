@@ -30,7 +30,6 @@ export default defineComponent({
         "BlockChain Architect",
         "IoT Solution Architect",
         "Supply Chain Manager",
-        "Digital Transformation Expert",
         "Sustainability Enthusiast",
       ] as string[],
       typingSpeed: 100 as number,
@@ -85,7 +84,7 @@ export default defineComponent({
   max-width: 100%;
 
   h1 {
-    font-size: pxToRem(72);
+    font-size: pxToRem(54);
     margin-top: pxToRem(80);
     margin-bottom: pxToRem(10);
     font-family: $heading-font;
@@ -96,7 +95,7 @@ export default defineComponent({
   }
 
   h2 {
-    font-size: pxToRem(36);
+    font-size: pxToRem(24);
     font-weight: $light-bold;
     margin-bottom: pxToRem(50);
 
@@ -114,12 +113,12 @@ export default defineComponent({
   }
 
   .blinking-cursor {
-    font-size: pxToRem(42);
+    font-size: pxToRem(28);
     color: $tertiary-color;
     animation: blink 1s step-end infinite;
 
     @include media-breakpoint-up(lg) {
-      font-size: pxToRem(54);
+      font-size: pxToRem(36);
     }
   }
 
