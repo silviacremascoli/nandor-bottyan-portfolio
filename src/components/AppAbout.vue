@@ -61,15 +61,11 @@
 </template>
 <script lang="ts">
 import AppClouds from "./AppClouds.vue";
-import AOS from "aos";
 
 export default {
-  name: "AppSkills",
+  name: "AppAbout",
   components: {
     AppClouds,
-  },
-  mounted() {
-    AOS.init();
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <section class="projects-section" id="projects">
     <h2 class="mb-4">My projects</h2>
-    <p class="projects-text">
+    <p class="px-1">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
       Donec nec urna orci. Aenean accumsan aliquam lobortis.
     </p>
@@ -95,15 +95,11 @@
 </template>
 <script lang="ts">
 import AppClouds from "./AppClouds.vue";
-import AOS from "aos";
 
 export default {
   name: "AppProjects",
   components: {
     AppClouds,
-  },
-  mounted() {
-    AOS.init();
   },
 };
 </script>
@@ -112,12 +108,6 @@ export default {
   background: $tertiary-color;
   max-width: 100%;
   padding: pxToRem(40) 0 0 0;
-
-  @include media-breakpoint-down(sm) {
-    .projects-text {
-      padding: 0 pxToRem(40);
-    }
-  }
 
   h2 {
     font-size: $h2-font-size;

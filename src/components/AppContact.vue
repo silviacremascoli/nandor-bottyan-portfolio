@@ -107,15 +107,11 @@
 </template>
 <script lang="ts">
 import AppClouds from "./AppClouds.vue";
-import AOS from "aos";
 
 export default {
   name: "AppContact",
   components: {
     AppClouds,
-  },
-  mounted() {
-    AOS.init();
   },
   methods: {
     // eslint-disable-next-line no-unused-vars

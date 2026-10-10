@@ -1,7 +1,7 @@
 <template>
   <section class="skills-section" id="skills">
     <h2 class="mb-4">Expertise</h2>
-    <p>
+    <p class="px-1">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet sem
       leo.<br />
       Praesent pellentesque nisi id augue tempus, eu dictum augue lobortis.
@@ -130,15 +130,11 @@
 </template>
 <script lang="ts">
 import AppClouds from "./AppClouds.vue";
-import AOS from "aos";
 
 export default {
   name: "AppSkills",
   components: {
     AppClouds,
-  },
-  mounted() {
-    AOS.init();
   },
 };
 </script>
