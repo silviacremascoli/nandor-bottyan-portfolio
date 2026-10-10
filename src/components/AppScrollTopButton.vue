@@ -1,8 +1,8 @@
 <template>
   <button
-    v-on:click.prevent="scrollToTop"
+    v-show="display"
+    @click="scrollToTop"
     id="scroll-top-button"
-    :style="{ display: display ? 'block' : 'none' }"
   >
     <i class="fa-regular fa-hand-point-up"></i>
   </button>
@@ -12,31 +12,38 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
+  name: "AppScrollTopButton",
   data() {
     return {
       display: false as boolean,
-      scrollPosition: 0 as number,
     };
   },
   mounted() {
-    window.addEventListener("scroll", this.detectScroll);
+    // use capture to catch scroll events from ANY scrolling container on the page
+    window.addEventListener("scroll", this.detectScroll, { passive: true, capture: true });
+    this.detectScroll();
   },
   unmounted() {
-    window.removeEventListener("scroll", this.detectScroll);
+    window.removeEventListener("scroll", this.detectScroll, { capture: true });
   },
   methods: {
-    // the scrollToTop function scrolls back to the top of the page with a smooth effect, while the detectScroll function makes the button appear only after the user has scrolled down
-    scrollToTop(event: Event) {
+    scrollToTop() {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+      document.body.scrollTo({ top: 0, behavior: "smooth" });
     },
-    detectScroll(event: Event) {
-      this.scrollPosition = window.scrollY;
-      if (this.scrollPosition > 500) {
-        this.display = true;
+    detectScroll(event?: Event) {
+      let scrollPos = 0;
+
+      // check if the scroll event originated from a specific inner container element
+      if (event && event.target && event.target !== document && event.target !== window) {
+        scrollPos = (event.target as HTMLElement).scrollTop || 0;
       } else {
-        this.display = false;
+        scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
       }
-    },
+
+      this.display = scrollPos > 500;
+    }
   },
 });
 </script>
