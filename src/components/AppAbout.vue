@@ -30,30 +30,16 @@
           data-aos-easing="ease-in"
         >
           <video
-            src="./media/industry_4.0.mp4"
+            src="./media/Cloud.mp4"
             width="600"
             class="img-fluid"
             autoplay
             loop
+            muted
+            playsinline
+            aria-hidden="true"
           ></video>
         </div>
-      </div>
-      <div class="floating-clouds">
-        <img
-          src="./media/floating_cloud.png"
-          class="floating-cloud-1 animation"
-          alt="floating cloud"
-        />
-        <img
-          src="./media/floating_cloud.png"
-          class="floating-cloud-2 animation"
-          alt="floating cloud"
-        />
-        <img
-          src="./media/floating_cloud.png"
-          class="floating-cloud-3 animation"
-          alt="floating cloud"
-        />
       </div>
     </div>
     <AppClouds />
@@ -94,144 +80,25 @@ export default {
     }
   }
 
-  video {
-    max-width: pxToRem(300);
-    padding: 0 0 pxToRem(20) 0;
-
-    @include media-breakpoint-up(sm) {
-      padding: pxToRem(30) 0 pxToRem(40) 0;
-      max-width: pxToRem(500);
-    }
-
-    @include media-breakpoint-up(lg) {
-      padding-top: pxToRem(40);
-    }
-  }
-
-  .floating-clouds {
-    .animation {
-      animation-direction: normal;
-      animation-fill-mode: none;
-      animation-play-state: running;
-      opacity: 0;
-
-      &.floating-cloud-1 {
-        top: pxToRem(3610);
-        max-width: pxToRem(50);
-        animation-duration: 20s;
-        animation-delay: 4s;
-
-        @include media-breakpoint-up(lg) {
-          top: pxToRem(2000);
-          max-width: pxToRem(70);
-          -webkit-animation: cloud-1 35s linear 6s infinite;
-          animation: cloud-1 35s linear 6s infinite;
-        }
+  .cloud-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    video {
+      max-width: pxToRem(300);
+      padding: 0 0 pxToRem(20) 0;
+  
+      @include media-breakpoint-up(sm) {
+        padding: pxToRem(30) 0 pxToRem(40) 0;
+        max-width: pxToRem(500);
       }
-
-      &.floating-cloud-2 {
-        top: pxToRem(3220);
-        animation-duration: 20s;
-        animation-delay: 2s;
-
-        @include media-breakpoint-up(lg) {
-          top: pxToRem(1800);
-          max-width: pxToRem(50);
-          -webkit-animation: cloud-2 25s linear 4s infinite;
-          animation: cloud-2 25s linear 6s infinite;
-        }
-      }
-
-      &.floating-cloud-3 {
-        top: pxToRem(4010);
-        animation-duration: 20s;
-        animation-delay: 6s;
-
-        @include media-breakpoint-up(lg) {
-          top: pxToRem(2150);
-          max-width: pxToRem(60);
-          -webkit-animation: cloud-3 30s linear 8s infinite;
-          animation: cloud-3 30s linear 6s infinite;
-        }
-      }
-    }
-
-    img {
-      position: absolute;
-      z-index: 0;
-      height: auto;
-    }
-
-    @keyframes cloud-1 {
-      0% {
-        opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        right: 0;
-      }
-      10% {
-        opacity: 0.3;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        right: pxToRem(200);
-      }
-      90% {
-        opacity: 0.3;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        right: pxToRem(1100);
-      }
-      100% {
-        opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        right: pxToRem(1200);
-      }
-    }
-
-    @keyframes cloud-2 {
-      0% {
-        opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        right: 0;
-      }
-      10% {
-        opacity: 0.4;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        right: pxToRem(200);
-      }
-      90% {
-        opacity: 0.4;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        right: pxToRem(1100);
-      }
-      100% {
-        opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        right: pxToRem(1200);
-      }
-    }
-
-    @keyframes cloud-3 {
-      0% {
-        opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        right: 0;
-      }
-      10% {
-        opacity: 0.2;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        right: pxToRem(200);
-      }
-      90% {
-        opacity: 0.2;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        right: pxToRem(1100);
-      }
-      100% {
-        opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        right: pxToRem(1200);
+  
+      @include media-breakpoint-up(lg) {
+        padding-top: pxToRem(40);
       }
     }
   }
-
   .clouds {
     fill: $tertiary-color;
     margin-bottom: 0;
