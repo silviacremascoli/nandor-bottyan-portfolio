@@ -91,9 +91,6 @@
             informed and embracing these changes, developers can build better, faster, and more
             engaging web experiences than ever before.
           </p>
-          <p>
-            What trend are you most excited about? Share your thoughts in the comments!
-          </p>
         </section>
         <div class="back-link">
           <router-link to="/blog" class="back-to-blog">
