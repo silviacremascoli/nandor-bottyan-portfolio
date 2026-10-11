@@ -1,6 +1,6 @@
 <template>
-  <ParticlesBg />
   <header class="header">
+    <ParticlesBg />
     <h1 class="my-name">John Smith</h1>
     <h2>
       <span class="my-role">{{ typingValue }}</span>
@@ -81,12 +81,19 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .header {
+  position: relative;
+  isolation: isolate;
   max-width: 100%;
+
+  > :not(#particles-js) {
+    position: relative;
+    z-index: 1;
+  }
 
   h1 {
     font-size: pxToRem(54);
-    margin-top: pxToRem(80);
-    margin-bottom: pxToRem(10);
+    padding-top: pxToRem(80);
+    padding-bottom: pxToRem(10);
     font-family: $heading-font;
 
     @include media-breakpoint-up(lg) {

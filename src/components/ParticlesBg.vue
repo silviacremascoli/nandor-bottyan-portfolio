@@ -6,12 +6,11 @@
       :particlesLoaded="particlesLoaded"
       :options="{
         fullScreen: {
-          enable: true,
-          zIndex: -1
+          enable: false,
         },
         background: {
           color: {
-            value: '#24263b',
+            value: 'transparent',
           },
         },
         fpsLimit: 180,
@@ -112,10 +111,15 @@ const particlesLoaded = async (container) => {
 
 #particles-js {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
-  height: 100vh;
-  pointer-events: none;
+  height: 100%;
+}
+
+#particles-js #tsparticles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
