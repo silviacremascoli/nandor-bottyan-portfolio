@@ -3,8 +3,10 @@
     v-show="display"
     @click="scrollToTop"
     id="scroll-top-button"
+    type="button"
+    aria-label="Back to top"
   >
-    <i class="fa-regular fa-hand-point-up"></i>
+    <i class="fa-regular fa-hand-point-up" aria-hidden="true"></i>
   </button>
 </template>
 
@@ -28,9 +30,10 @@ export default defineComponent({
   },
   methods: {
     scrollToTop() {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-      document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
-      document.body.scrollTo({ top: 0, behavior: "smooth" });
+      const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+      window.scrollTo({ top: 0, left: 0, behavior });
+      document.documentElement.scrollTo({ top: 0, behavior });
+      document.body.scrollTo({ top: 0, behavior });
     },
     detectScroll(event?: Event) {
       let scrollPos = 0;
@@ -61,7 +64,6 @@ export default defineComponent({
   border-radius: $round-border-radius;
   background: $tertiary-color;
   box-shadow: 0 0 pxToRem(10) rgba(0, 0, 0, 0.5);
-  outline: none;
   border: none;
   cursor: pointer;
   transition: all 300ms ease-in-out;

@@ -6,7 +6,7 @@
         <p class="post-meta">Posted on August 28, 2026</p>
       </header>
 
-      <main class="article-content">
+      <div class="article-content">
         <p class="article-lead">
           The web development landscape is evolving at an unprecedented pace. New technologies,
           paradigms, and tools are emerging that will fundamentally change how we build for the
@@ -100,7 +100,7 @@
             ← Back to Blog
           </router-link>
         </div>
-      </main>
+      </div>
     </div>
     <AppClouds />
   </div>
@@ -158,7 +158,7 @@ export default {
     }
 
     .post-meta {
-      color: rgba($tertiary-color, 0.6);
+      color: $white;
       font-size: 0.9rem;
       font-style: italic;
     }
@@ -174,7 +174,7 @@ export default {
   .article-lead {
     text-align: center;
     font-size: 1.2rem;
-    color: rgba($tertiary-color, 0.8);
+    color: $white;
     line-height: 1.7;
   }
 
@@ -194,13 +194,13 @@ export default {
     }
 
     p {
-      color: rgba($tertiary-color, 0.8);
+      color: $white;
       line-height: 1.8;
       margin-bottom: 15px;
     }
 
     ul {
-      color: rgba($tertiary-color, 0.8);
+      color: $white;
       line-height: 1.8;
       margin-bottom: 15px;
       padding-left: 20px;
@@ -211,7 +211,7 @@ export default {
       }
 
       strong {
-        color: $tertiary-color;
+        color: $white;
       }
     }
   }
@@ -221,7 +221,7 @@ export default {
     margin: 40px 0;
 
     .back-to-blog {
-      color: rgba($tertiary-color, 0.8);
+      color: $white;
       text-decoration: none;
       font-size: 1rem;
       display: inline-flex;
@@ -230,7 +230,8 @@ export default {
       transition: all 0.3s ease;
 
       &:hover {
-        color: $tertiary-color;
+        color: $white;
+        text-decoration: underline;
         gap: 12px;
       }
     }

@@ -6,7 +6,7 @@
         <p class="post-meta">Posted on September 15, 2026</p>
       </header>
 
-      <main class="article-content">
+      <div class="article-content">
         <p class="article-lead">
           CSS has evolved dramatically in recent years. Modern CSS features allow us to build
           complex, responsive layouts with cleaner code and better performance. In this article,
@@ -96,7 +96,7 @@
             ← Back to Blog
           </router-link>
         </div>
-      </main>
+      </div>
     </div>
     <AppClouds />
   </div>
@@ -156,7 +156,7 @@ export default {
     }
 
     .post-meta {
-      color: rgba($tertiary-color, 0.6);
+      color: $white;
       font-size: 0.9rem;
       font-style: italic;
     }
@@ -172,7 +172,7 @@ export default {
   .article-lead {
     text-align: center;
     font-size: 1.2rem;
-    color: rgba($tertiary-color, 0.8);
+    color: $white;
     line-height: 1.7;
   }
 
@@ -192,13 +192,13 @@ export default {
     }
 
     p {
-      color: rgba($tertiary-color, 0.8);
+      color: $white;
       line-height: 1.8;
       margin-bottom: 15px;
     }
 
     ul {
-      color: rgba($tertiary-color, 0.8);
+      color: $white;
       line-height: 1.8;
       margin-bottom: 15px;
       padding-left: 20px;
@@ -209,7 +209,7 @@ export default {
       }
 
       strong {
-        color: $tertiary-color;
+        color: $white;
       }
     }
 
@@ -232,7 +232,7 @@ export default {
 
     a {
       color: color.adjust($tertiary-color, $lightness: 20%);
-      text-decoration: none;
+      text-decoration: underline;
 
       &:hover {
         text-decoration: underline;
@@ -245,7 +245,7 @@ export default {
     margin: 40px 0;
 
     .back-to-blog {
-      color: rgba($tertiary-color, 0.8);
+      color: $white;
       text-decoration: none;
       font-size: 1rem;
       display: inline-flex;
@@ -254,7 +254,8 @@ export default {
       transition: all 0.3s ease;
 
       &:hover {
-        color: $tertiary-color;
+        color: $white;
+        text-decoration: underline;
         gap: 12px;
       }
     }

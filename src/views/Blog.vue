@@ -6,7 +6,7 @@
         <p class="subtitle">Thoughts, ideas, and insights</p>
       </header>
 
-      <main class="blog-content">
+      <div class="blog-content">
         <article class="blog-post" data-aos="fade-up" data-aos-duration="1000">
           <h2>Getting Started with Vue 3</h2>
           <p class="post-meta">Posted on October 1, 2026</p>
@@ -39,7 +39,7 @@
           </p>
           <router-link to="/blog/web-future" class="read-more">Read more →</router-link>
         </article>
-      </main>
+      </div>
     </div>
     <AppClouds />
   </div>
@@ -100,7 +100,7 @@ export default {
 
     .subtitle {
       font-size: 1.2rem;
-      color: rgba($tertiary-color, 0.7);
+      color: $white;
     }
   }
 
@@ -124,27 +124,28 @@ export default {
     }
 
     .post-meta {
-      color: rgba($tertiary-color, 0.6);
+      color: $white;
       font-size: 0.9rem;
       margin-bottom: 15px;
       font-style: italic;
     }
 
     p {
-      color: rgba($tertiary-color, 0.8);
+      color: $white;
       line-height: 1.6;
       margin-bottom: 20px;
     }
 
     .read-more {
-      color: $tertiary-color;
+      color: $white;
       text-decoration: none;
       font-weight: 500;
       display: inline-block;
       transition: all 0.3s ease;
 
       &:hover {
-        color: color.adjust($tertiary-color, $lightness: 20%);
+        color: $white;
+        text-decoration: underline;
         transform: translateX(5px);
       }
     }

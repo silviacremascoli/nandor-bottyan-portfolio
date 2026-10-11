@@ -1,9 +1,9 @@
 <template>
-  <nav class="navbar navbar-expand-lg sticky-top">
+  <nav class="navbar navbar-expand-lg sticky-top" aria-label="Main navigation">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"
-        ><img src="../assets/john-smith-logo.png" alt="John Smith logo" class="logo"
-      /></a>
+      <router-link class="navbar-brand" to="/" @click="navigateTo('/', $event)">
+        <img src="../assets/john-smith-logo.png" alt="John Smith logo" class="logo" />
+      </router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -17,7 +17,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto nav-underline">
-          <router-link class="nav-link home-link" aria-current="page" to="/" @click="navigateTo('/', $event)">Home</router-link>
+          <router-link class="nav-link home-link" to="/" @click="navigateTo('/', $event)">Home</router-link>
           <router-link class="nav-link" :to="{ path: '/', hash: '#skills' }" @click="navigateTo({ path: '/', hash: '#skills' }, $event)">Expertise</router-link>
           <router-link class="nav-link" :to="{ path: '/', hash: '#about-me' }" @click="navigateTo({ path: '/', hash: '#about-me' }, $event)">About me</router-link>
           <router-link class="nav-link" to="/blog" @click="navigateTo('/blog', $event)">Blog</router-link>
@@ -104,10 +104,6 @@ nav {
   .navbar-toggler {
     background: $tertiary-color;
 
-    &:is(:focus, :active) {
-      outline: none;
-      box-shadow: none;
-    }
   }
   .logo {
     max-width: 60px;

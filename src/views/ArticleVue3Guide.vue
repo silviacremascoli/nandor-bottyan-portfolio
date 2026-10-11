@@ -6,7 +6,7 @@
         <p class="post-meta">Posted on October 1, 2026</p>
       </header>
 
-      <main class="article-content">
+      <div class="article-content">
         <p class="article-lead">
           Vue 3 represents a significant evolution from Vue 2, bringing the Composition API,
           improved TypeScript support, and performance optimizations. Whether you're new to
@@ -85,7 +85,7 @@
             require attention, especially around the reactivity system and lifecycle hooks.
           </p>
         </section>
-      </main>
+      </div>
       <div class="back-link">
         <router-link to="/blog" class="back-to-blog">
           ← Back to Blog
@@ -150,7 +150,7 @@ export default {
     }
 
     .post-meta {
-      color: rgba($tertiary-color, 0.6);
+      color: $white;
       font-size: 0.9rem;
       font-style: italic;
     }
@@ -166,7 +166,7 @@ export default {
   .article-lead {
     text-align: center;
     font-size: 1.2rem;
-    color: rgba($tertiary-color, 0.8);
+    color: $white;
     line-height: 1.7;
   }
 
@@ -186,13 +186,13 @@ export default {
     }
 
     p {
-      color: rgba($tertiary-color, 0.8);
+      color: $white;
       line-height: 1.8;
       margin-bottom: 15px;
     }
 
     ul {
-      color: rgba($tertiary-color, 0.8);
+      color: $white;
       line-height: 1.8;
       margin-bottom: 15px;
       padding-left: 20px;
@@ -203,7 +203,7 @@ export default {
       }
 
       strong {
-        color: $tertiary-color;
+        color: $white;
       }
     }
 
@@ -226,7 +226,7 @@ export default {
 
     a {
       color: color.adjust($tertiary-color, $lightness: 20%);
-      text-decoration: none;
+      text-decoration: underline;
 
       &:hover {
         text-decoration: underline;
@@ -239,7 +239,7 @@ export default {
     margin: 40px 0;
 
     .back-to-blog {
-      color: rgba($tertiary-color, 0.8);
+      color: $white;
       text-decoration: none;
       font-size: 1rem;
       display: inline-flex;
@@ -248,7 +248,8 @@ export default {
       transition: all 0.3s ease;
 
       &:hover {
-        color: $tertiary-color;
+        color: $white;
+        text-decoration: underline;
         gap: 12px;
       }
     }

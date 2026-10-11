@@ -15,54 +15,56 @@
       <div
         id="carouselExampleCaptions"
         class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
+        role="region"
+        aria-label="Featured project videos"
+        aria-roledescription="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
             <iframe
               class="embed d-block w-100"
               src="https://www.youtube.com/embed/zSWdZVtXT7E"
-              title="YouTube video player"
+              title="Featured project video 1"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
             <div class="carousel-caption d-none d-md-block">
               <div class="project-caption">
-                <h5>Project</h5>
+                <h3>Project 1</h3>
                 <p class="m-0">
                   Some representative placeholder content for the first slide.
                 </p>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
             <iframe
               class="embed d-block w-100"
               src="https://www.youtube.com/embed/r5X-hFf6Bwo"
-              title="YouTube video player"
+              title="Featured project video 2"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
             <div class="carousel-caption d-none d-md-block">
               <div class="project-caption">
-                <h5>Project</h5>
+                <h3>Project 2</h3>
                 <p class="m-0">
                   Some representative placeholder content for the first slide.
                 </p>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
             <iframe
               class="embed d-block w-100"
               src="https://www.youtube.com/embed/vtxVK3sbZ0o"
-              title="YouTube video player"
+              title="Featured project video 3"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
             <div class="carousel-caption d-none d-md-block">
               <div class="project-caption">
-                <h5>Project</h5>
+                <h3>Project 3</h3>
                 <p class="m-0">
                   Some representative placeholder content for the first slide.
                 </p>

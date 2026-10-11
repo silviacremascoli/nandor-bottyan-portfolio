@@ -1,8 +1,9 @@
 <template>
   <div id="app">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <AppNav />
     <AppScrollTopButton />
-    <main class="main-content">
+    <main id="main-content" class="main-content" tabindex="-1">
       <router-view></router-view>
     </main>
     <AppFooter />
@@ -37,7 +38,7 @@ export default {
           if (element) {
             requestAnimationFrame(() => {
               element.scrollIntoView({
-                behavior: "smooth",
+                behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
                 block: "start",
               });
       });
@@ -77,5 +78,41 @@ section {
 
 .main-content {
   flex: 1 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  padding: pxToRem(12) pxToRem(16);
+  color: $secondary-color;
+  background: $white;
+  transform: translateY(-150%);
+
+  &:focus {
+    transform: translateY(0);
+  }
+}
+
+:focus-visible {
+  outline: 3px solid $white;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 </style>

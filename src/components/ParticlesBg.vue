@@ -1,5 +1,5 @@
 <template>
-  <div id="particles-js">
+  <div id="particles-js" aria-hidden="true">
     <Particles
       id="tsparticles"
       :particlesInit="particlesInit"
@@ -121,5 +121,11 @@ const particlesLoaded = async (container) => {
   inset: 0;
   width: 100%;
   height: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #particles-js {
+    display: none;
+  }
 }
 </style>

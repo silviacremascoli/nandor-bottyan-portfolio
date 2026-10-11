@@ -3,9 +3,10 @@
     <ParticlesBg />
     <h1 class="my-name">John Smith</h1>
     <h2>
-      <span class="my-role">{{ typingValue }}</span>
-      <span class="blinking-cursor">|</span>
-      <span :class="{ typing: typingStatus }">&nbsp;</span>
+      <span class="visually-hidden">Blockchain Architect, IoT Solution Architect, Supply Chain Manager, Sustainability Enthusiast</span>
+      <span class="my-role" aria-hidden="true">{{ typingValue }}</span>
+      <span class="blinking-cursor" aria-hidden="true">|</span>
+      <span aria-hidden="true" :class="{ typing: typingStatus }">&nbsp;</span>
     </h2>
     <AppClouds />
   </header>
@@ -40,6 +41,10 @@ export default defineComponent({
     };
   },
   created() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      this.typingValue = this.displayRoleArray[0];
+      return;
+    }
     setTimeout(this.typeText, this.newTextDelay + 200);
   },
   methods: {

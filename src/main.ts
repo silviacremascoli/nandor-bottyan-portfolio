@@ -10,21 +10,30 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('aos-animate');
-    } else {
-      entry.target.classList.remove('aos-animate');
+      observer.unobserve(entry.target);
     }
   });
 }, { threshold: 0.1 });
 
+const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
 // Observe all current and future AOS elements
 function observeAosElements() {
-  document.querySelectorAll('[data-aos]').forEach(el => {
-    if (!el.classList.contains('aos-init')) {
-      el.classList.add('aos-init');
-    }
+  const elements = document.querySelectorAll('[data-aos]');
+
+  if (reducedMotionQuery.matches) {
+    elements.forEach(el => el.classList.add('aos-init', 'aos-animate'));
+    return;
+  }
+
+  elements.forEach(el => {
+    if (el.classList.contains('aos-init')) return;
+    el.classList.add('aos-init');
     observer.observe(el);
   });
 }
+
+reducedMotionQuery.addEventListener('change', observeAosElements);
 
 router.isReady().then(() => {
   nextTick(observeAosElements);

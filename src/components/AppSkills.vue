@@ -165,6 +165,7 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         background: $primary-color;
         border-radius: $standard-border-radius;
         border: pxToRem(1) solid $primary-color;

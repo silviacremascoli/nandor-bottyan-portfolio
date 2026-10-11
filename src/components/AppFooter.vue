@@ -4,28 +4,34 @@
       <a
         href="https://www.linkedin.com/in/john-smith/"
         target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn profile for John Smith"
         title="LinkedIn John Smith"
-        ><i class="fa-brands fa-linkedin"></i
+        ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
       ></a>
       <a
         href="https://github.com/johnsmith"
         target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub profile for John Smith"
         title="GitHub John Smith"
-        ><i class="fa-brands fa-github"></i
+        ><i class="fa-brands fa-github" aria-hidden="true"></i
       ></a>
-      <a href="https://youtube.com" target="_blank" title="Youtube John Smith"
-        ><i class="fa-brands fa-youtube"></i
+      <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube for John Smith" title="Youtube John Smith"
+        ><i class="fa-brands fa-youtube" aria-hidden="true"></i
       ></a>
       <a
         href="https://drive.google.com/file/d/1lcpjhCugvGs7G4qIBis6Uv1gtVaqoWjo/view?usp=drive_link"
         target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Resume for John Smith"
         title="Resume John Smith"
-        ><i class="fa-solid fa-file"></i
+        ><i class="fa-solid fa-file" aria-hidden="true"></i
       ></a>
     </div>
     <p class="px-1">
       This website was coded by
-      <a href="https://silviacremascoli.com" target="_blank"
+      <a href="https://silviacremascoli.com" target="_blank" rel="noopener noreferrer"
         >Silvia Cremascoli</a
       >
     </p>

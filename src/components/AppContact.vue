@@ -13,8 +13,8 @@
         data-aos-duration="2000"
         data-aos-easing="ease-in"
       >
-        <div class="d-flex flex-column justify-content-center">
-          <i class="fa-solid fa-envelope mb-3"></i>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <i class="fa-solid fa-envelope mb-3" aria-hidden="true"></i>
           <p>Email me:</p>
           <a href="mailto:johnsmith@gmail.com" class="fw-semibold"
             >johnsmith@gmail.com</a
@@ -27,8 +27,8 @@
         data-aos-duration="3000"
         data-aos-easing="ease-in"
       >
-        <div class="d-flex flex-column justify-content-center">
-          <i class="fa-solid fa-phone mb-3"></i>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <i class="fa-solid fa-phone mb-3" aria-hidden="true"></i>
           <p>Call me:</p>
           <p class="fw-semibold">+1234567890</p>
         </div>
@@ -39,12 +39,13 @@
         data-aos-duration="3500"
         data-aos-easing="ease-in"
       >
-        <div class="d-flex flex-column justify-content-center">
-          <i class="fa-brands fa-linkedin mb-3"></i>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <i class="fa-brands fa-linkedin mb-3" aria-hidden="true"></i>
           <p>Find me on LinkedIn:</p>
           <a
             href="https://www.linkedin.com/in/john-smith/"
             target="_blank"
+            rel="noopener noreferrer"
             class="fw-semibold"
             >/john-smith</a
           >
@@ -59,46 +60,53 @@
         data-aos-easing="ease-in"
       >
         <h3 class="mb-5 text-center">Or write me a message here:</h3>
-        <form method="POST" name="contact" netlify>
+        <form method="POST" name="contact" netlify @submit.prevent="sent">
           <div class="row g-3">
             <div class="col-lg">
+              <label class="form-label" for="contact-name">Name</label>
               <input
+                id="contact-name"
+                name="name"
                 type="text"
                 class="form-control"
-                placeholder="Name"
-                aria-label="Name"
+                autocomplete="given-name"
               />
             </div>
             <div class="col-lg">
+              <label class="form-label" for="contact-surname">Surname</label>
               <input
+                id="contact-surname"
+                name="surname"
                 type="text"
                 class="form-control"
-                placeholder="Surname"
-                aria-label="Surname"
+                autocomplete="family-name"
               />
             </div>
             <div class="col-lg-7">
+              <label class="form-label" for="contact-email">Email address</label>
               <input
+                id="contact-email"
+                name="email"
                 type="email"
                 class="form-control"
-                placeholder="Email address"
-                aria-label="Email address"
+                autocomplete="email"
               />
             </div>
           </div>
           <div class="form-group mb-4">
+            <label class="form-label mt-4" for="your-message">Your message</label>
             <textarea
-              class="form-control mt-4"
-              placeholder="Your message..."
+              class="form-control"
               id="your-message"
               rows="8"
               name="message"
               required
             ></textarea>
           </div>
-          <button v-on:click.prevent="sent" type="submit" class="btn btn-main">
+          <button type="submit" class="btn btn-main">
             Send!
           </button>
+          <p v-if="submitted" class="mt-3" role="status">Thank you! I'll answer you as soon as possible!</p>
         </form>
       </div>
     </div>
@@ -110,13 +118,17 @@ import AppClouds from "./AppClouds.vue";
 
 export default {
   name: "AppContact",
+  data() {
+    return {
+      submitted: false,
+    };
+  },
   components: {
     AppClouds,
   },
   methods: {
-    // eslint-disable-next-line no-unused-vars
-    sent: function (event: MouseEvent) {
-      alert("Thank you! I'll answer you as soon as possible!");
+    sent() {
+      this.submitted = true;
     },
   },
 };
@@ -203,6 +215,11 @@ export default {
   .contact-form {
     margin: 0 auto;
     padding: 0;
+
+    .form-label {
+      display: block;
+      text-align: left;
+    }
 
     @include media-breakpoint-up(sm) {
       padding: 0 pxToRem(50);
